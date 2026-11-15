@@ -896,6 +896,44 @@ html:not(.pres) .thanks .coinfo b{font-size:18px}
   html:not(.pres) .bud>div:first-child,html:not(.pres) .bud>div:last-child{padding:18px!important}
 }
 
+/* ===== slide 04: NAVER ===== */
+.nv{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.25fr);gap:36px;margin-top:36px}
+.nv-l,.nv-r{min-height:300px}
+.nv-l,.nv-r{border-radius:12px;padding:26px 28px}
+.nv-l{background:#F7F8FA}
+.nv-r{background:#fff;border:1.5px solid var(--blue);box-shadow:0 12px 30px rgba(9,30,66,.12)}
+.nv-h b{display:block;font-size:22px}.nv-h span{display:block;font-size:16px;color:var(--sub);margin-top:4px}
+.nv-l .hbars{margin-top:22px}
+.nv-l .hbars .r{grid-template-columns:96px minmax(0,1fr) 92px!important;gap:14px!important;padding:12px 0!important}
+.nv-l .hbars .lb{font-size:20px!important}.nv-l .hbars .tr{height:30px!important}.nv-l .hbars .pv{font-size:26px!important}
+.nbig{display:flex;align-items:center;gap:18px;margin-top:14px}
+.nbig .num{font-size:100px;line-height:1;color:var(--blue);letter-spacing:-.02em}.nbig .num small{font-size:44px}
+.nbig p{font-size:26px;font-weight:700;line-height:1.4}.nbig .nsub{font-size:19px;font-weight:600;color:var(--sub)}.nbig p b{color:var(--blue)}
+.nstack{display:flex;height:44px;border-radius:8px;overflow:hidden;margin-top:16px}
+.nseg{height:100%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:17px;min-width:0}
+.nseg span{white-space:nowrap}
+.nseg.s1{background:#6BA8FF}.nseg.s2{background:#0F4DBF}.nseg.s3{background:#073D8C}
+.nseg.s4{background:#CDD1D8;color:#40454D}.nseg.s5{background:#E3E5E9;color:transparent}.nseg.s6{background:#F0F0F0;color:transparent}
+.nbr{margin-left:42.2%;width:40.3%;border-top:3px solid var(--deep);margin-top:6px;padding-top:6px}
+.nbr span{display:block;font-size:17px;font-weight:700;color:var(--deep);white-space:nowrap}
+.nleg{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:14px}
+.nl{display:inline-flex;align-items:center;gap:6px;font-size:16px;color:var(--sub)}
+.nl i{display:block;width:12px;height:12px;border-radius:3px}
+.nl b{color:var(--ink);font-weight:700}
+.nl.s1 i{background:#6BA8FF}.nl.s2 i{background:#0F4DBF}.nl.s3 i{background:#073D8C}.nl.s4 i{background:#CDD1D8}.nl.s5 i{background:#E3E5E9}.nl.s6 i{background:#F0F0F0;border:1px solid #CDD1D8}
+.nv + .punch{margin-top:26px}
+@media (max-width:1099px){
+  html:not(.pres) .nv{grid-template-columns:1fr;gap:14px;margin-top:16px}
+  html:not(.pres) .nv-l,html:not(.pres) .nv-r{padding:16px}
+  html:not(.pres) .nv-h b{font-size:16px}html:not(.pres) .nv-h span{font-size:11px}
+  html:not(.pres) .nv-l .hbars .r{grid-template-columns:64px minmax(0,1fr) 52px!important;gap:8px!important;padding:6px 0!important}
+  html:not(.pres) .nv-l .hbars .lb{font-size:13px!important}html:not(.pres) .nv-l .hbars .tr{height:20px!important}html:not(.pres) .nv-l .hbars .pv{font-size:15px!important}
+  html:not(.pres) .nbig .num{font-size:56px}html:not(.pres) .nbig .num small{font-size:24px}html:not(.pres) .nbig p{font-size:15px}
+  html:not(.pres) .nstack{height:30px}html:not(.pres) .nseg{font-size:11px}
+  html:not(.pres) .nbr span{font-size:11px;white-space:normal}
+  html:not(.pres) .nl{font-size:11px}
+}
+
 @media print{
   @page{size:1600px 900px;margin:0}
   html,body{background:var(--face);overflow:visible}
@@ -1007,13 +1045,25 @@ html.pres.ui .pctl{opacity:1}
 <section class="slide">
   <div class="hd"><span><k>과제</k><j>課題</j></span><span class="no">04</span></div>
   <h2><k>한국 여행자는 출발 전에 정합니다</k><j>韓国人旅行者は、出発前に決めます</j></h2>
-  <p class="sub"><k>방일 한국인이 "출발 전에 도움이 됐다"고 답한 정보원 (복수 응답)</k><j>訪日韓国人が「出発前に役立った」と答えた情報源（複数回答）</j></p>
-  <div class="hbars">
-    <div class="r"><span class="lb"><k>SNS</k><j>SNS</j></span><div class="tr"><div class="fill" style="width:94.2%"></div></div><span class="pv num">47.1%</span></div>
-    <div class="r"><span class="lb"><k>동영상 사이트</k><j>動画サイト</j></span><div class="tr"><div class="fill" style="width:87.6%"></div></div><span class="pv num">43.8%</span></div>
-    <div class="r"><span class="lb"><k>개인 블로그</k><j>個人ブログ</j></span><div class="tr"><div class="fill" style="width:85.8%"></div></div><span class="pv num">42.9%</span></div>
+  <p class="sub"><k>출발 전에 SNS·동영상·블로그로 정보를 모으고, 그 탐색의 중심은 네이버입니다.</k><j>出発前にSNS・動画・ブログで情報を集め、その中心にあるのがNAVERです。</j></p>
+  <div class="nv">
+    <div class="nv-l">
+      <div class="nv-h"><b><k>출발 전에 도움이 된 정보원</k><j>出発前に役立った情報源</j></b><span><k>방일 한국인 · 観光庁 · 복수 응답</k><j>訪日韓国人・観光庁・複数回答</j></span></div>
+      <div class="hbars">
+        <div class="r"><span class="lb">SNS</span><div class="tr"><div class="fill" style="width:94.2%"></div></div><span class="pv num">47.1%</span></div>
+        <div class="r"><span class="lb"><k>동영상</k><j>動画サイト</j></span><div class="tr"><div class="fill" style="width:87.6%"></div></div><span class="pv num">43.8%</span></div>
+        <div class="r"><span class="lb"><k>블로그</k><j>ブログ</j></span><div class="tr"><div class="fill" style="width:85.8%"></div></div><span class="pv num">42.9%</span></div>
+      </div>
+    </div>
+    <div class="nv-r">
+      <div class="nv-h"><b><k>일본 여행 정보를 얻는 곳</k><j>日本旅行の情報を得る場所</j></b><span><k>FLYING 커뮤니티 회원 434명 · 2024.10–2025.02 · 단일 응답</k><j>FLYINGコミュニティ会員434名・2024.10–2025.02・単一回答</j></span></div>
+      <div class="nbig"><span class="num">82.5<small>%</small></span><p><k><b>네이버</b>에서 찾습니다<br><span class="nsub">검색 · 카페 · 블로그</span></k><j><b>NAVER</b>で探します<br><span class="nsub">検索・カフェ・ブログ</span></j></p></div>
+      <div class="nstack"><div class="nseg s1" style="width:42.2%"><span class="num">42.2</span></div><div class="nseg s2" style="width:25.6%"><span class="num">25.6</span></div><div class="nseg s3" style="width:14.7%"><span class="num">14.7</span></div><div class="nseg s4" style="width:9.2%"><span class="num">9.2</span></div><div class="nseg s5" style="width:4.8%"><span class="num">4.8</span></div><div class="nseg s6" style="width:3.5%"><span class="num">3.5</span></div></div>
+      <div class="nbr"><span><k>카페·블로그에서 후기를 읽고 정함 40.3%</k><j>カフェ・ブログで口コミを読んで決める 40.3%</j></span></div>
+      <div class="nleg"><span class="nl s1"><i></i><k>네이버 검색</k><j>NAVER 検索</j><b class="num">42.2%</b></span><span class="nl s2"><i></i><k>네이버 카페</k><j>NAVER カフェ</j><b class="num">25.6%</b></span><span class="nl s3"><i></i><k>네이버 블로그</k><j>NAVER ブログ</j><b class="num">14.7%</b></span><span class="nl s4"><i></i><k>유튜브</k><j>YouTube</j><b class="num">9.2%</b></span><span class="nl s5"><i></i><k>구글</k><j>Google</j><b class="num">4.8%</b></span><span class="nl s6"><i></i><k>인스타그램</k><j>Instagram</j><b class="num">3.5%</b></span></div>
+    </div>
   </div>
-  <p class="punch"><k>일정표에 들어가려면, 출발 전에 보는 곳에 있어야 합니다.</k><j>旅程に入るには、出発前に見られる場所にあることが必要です。</j></p>
+  <p class="punch"><k>일정표에 들어가려면, 네이버 카페·블로그에 있어야 합니다.</k><j>旅程に入るには、NAVERのカフェ・ブログにあることが必要です。</j></p>
 </section>
 
 <section class="slide">
@@ -1485,6 +1535,7 @@ html.pres.ui .pctl{opacity:1}
       <tr><td><k>방일 한국인</k><j>訪日韓国人</j></td><td><k>JNTO 추계 2025년(2026.1.21 발표), 2026년 1~9월(2026.10.21 발표)</k><j>JNTO推計 2025年（2026年1月21日発表）、2026年1〜9月（同10月21日発表）</j></td></tr>
       <tr><td><k>규슈 입국</k><j>九州入国者</j></td><td><k>九州運輸局 2025년 확정치 (2026.3 보도)</k><j>九州運輸局 2025年確定値（2026年3月報道）</j></td></tr>
       <tr><td><k>정보원</k><j>情報源</j></td><td><k>観光庁 인바운드 소비동향조사 2025년 연차보고서</k><j>観光庁 インバウンド消費動向調査 2025年年次報告書</j></td></tr>
+      <tr><td><k>네이버 이용 설문</k><j>NAVER利用アンケート</j></td><td><k>FLYING 커뮤니티 회원 설문 434명, 2024.10–2025.02, 단일 응답 (회원 대상이라 네이버 이용자 비중이 높을 수 있음)</k><j>FLYINGコミュニティ会員アンケート434名、2024年10月〜2025年2月、単一回答（会員対象のためNAVER利用者の比率が高い可能性あり）</j></td></tr>
       <tr><td><k>회원 수 · 실적</k><j>会員数・実績</j></td><td><k>FLYING 공식 홈페이지 표기(2026.11.12 확인) · 2025 회사소개서</k><j>FLYING公式サイト表記（2026年11月12日確認）・会社案内2025年版</j></td></tr>
       <tr><td><k>화면 시안</k><j>画面イメージ</j></td><td><k>이 제안서의 화면은 모두 협의용 시안이며 실제 운영 화면이 아닙니다</k><j>本資料の画面はすべて協議用イメージであり、実際の運用画面ではありません</j></td></tr>
     </table>
