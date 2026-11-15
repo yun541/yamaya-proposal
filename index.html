@@ -603,107 +603,164 @@ table.t th{color:var(--sub)}
 
 /* ===== Responsive: document mode under 1100px ===== */
 @media (max-width:1099px){
-  .deck{padding:70px 0 24px}
-  .wrap{width:auto!important;height:auto!important;margin:0 10px 14px;border-radius:12px;box-shadow:var(--e1);overflow:hidden}
-  .slide{position:relative!important;width:auto!important;height:auto!important;transform:none!important;padding:48px 20px 24px;min-height:0}
-  .hd{top:16px;left:20px;right:20px;font-size:12px}
-  h2,html[data-lang="ja"] h2{font-size:25px!important;margin-top:8px;line-height:1.3}
-  html[data-lang="ja"] h2{font-size:22px!important}
-  .sub,.lead{font-size:15px;margin-top:10px}
-  .punch,html[data-lang="ja"] .punch{font-size:17px;padding:14px 16px;margin-top:20px}
-  .stmt1,html[data-lang="ja"] .stmt1{font-size:16px;padding:14px 16px}
-  .src{font-size:12px;margin-top:16px}
-  .story{font-size:15px;margin-top:16px}
-  .chip{font-size:12px}
-  /* cover / thanks */
+html:not(.pres) .deck{padding:70px 0 24px}
+html:not(.pres) .wrap{width:auto!important;height:auto!important;margin:0 10px 14px;border-radius:12px;box-shadow:var(--e1);overflow:hidden}
+html:not(.pres) .slide{position:relative!important;width:auto!important;height:auto!important;transform:none!important;padding:48px 20px 24px;min-height:0}
+html:not(.pres) .hd{top:16px;left:20px;right:20px;font-size:12px}
+html:not(.pres) h2,html:not(.pres)[data-lang="ja"] h2{font-size:25px!important;margin-top:8px;line-height:1.3}
+html:not(.pres)[data-lang="ja"] h2{font-size:22px!important}
+html:not(.pres) .sub,html:not(.pres) .lead{font-size:15px;margin-top:10px}
+html:not(.pres) .punch,html:not(.pres)[data-lang="ja"] .punch{font-size:17px;padding:14px 16px;margin-top:20px}
+html:not(.pres) .stmt1,html:not(.pres)[data-lang="ja"] .stmt1{font-size:16px;padding:14px 16px}
+html:not(.pres) .src{font-size:12px;margin-top:16px}
+html:not(.pres) .story{font-size:15px;margin-top:16px}
+html:not(.pres) .chip{font-size:12px}
+html:not(.pres) /* cover / thanks */
   .cover{padding:28px 20px 30px}
-  .cover svg{display:none}
-  .cover .to{font-size:13px}
-  .cover h1,html[data-lang="ja"] .cover h1{font-size:38px;margin-top:36px}
-  .cover .subt,html[data-lang="ja"] .cover .subt{font-size:16px;margin-top:16px}
-  .cover .ken{font-size:12px}
-  .cover .from{position:static;text-align:left;margin-top:28px;font-size:14px}
-  .cover .from b{font-size:20px}
-  .thanks h1{font-size:44px!important}
-  .thanks .coinfo{position:static;margin-top:36px;font-size:14px}
-  .thanks .coinfo b{font-size:20px}
-  /* collapse grids */
-  .nums,.three,.ev,.ab2,.two,.det,.bud,.roles,.opp,.stmt,.chg,.inc,.res,.co,.ctr,.q3,.cond,.sum3>div,.hours{grid-template-columns:1fr!important;gap:14px}
-  .nums,.n3s{margin-top:20px}
-  .nums>div,.three>div,.ev>div{border-right:0!important;margin-right:0!important;padding:14px 0!important;border-bottom:1px solid var(--rule)}
-  .nums .v{font-size:56px}.nums .v small{font-size:22px}
-  .nums b{font-size:17px;margin-top:8px}.nums span{font-size:13px}
-  .n3s .v{font-size:44px}.n3s .v small{font-size:20px}.n3s b{font-size:15px}
-  .hero52{gap:16px;margin-top:20px;flex-wrap:wrap}
-  .hero52 .bn{font-size:88px}.hero52 .bn small{font-size:32px}
-  .hero52 b{font-size:17px}.hero52 span{font-size:12px}
-  .big3{margin-top:16px}.big3 .h,.three .h{font-size:24px}.big3 li,.three li{font-size:14px;padding:7px 0}
-  .sum3{margin-top:18px}.sum3>div{padding:14px 0;gap:4px}.sum3 .l{font-size:13px}.sum3 p,html[data-lang="ja"] .sum3 p{font-size:18px}
-  .hbars{margin-top:18px}.hbars .r{grid-template-columns:96px 1fr 62px;gap:10px;padding:8px 0}
-  .hbars .lb{font-size:14px}.hbars .tr{height:26px}.hbars .pv{font-size:20px}
-  .ev .v{font-size:44px}.ev .v small{font-size:20px}.ev .w{font-size:16px}.ev .x{font-size:13px}
-  .ctrnum .bn{font-size:84px}.ctrnum .bn small{font-size:32px}.ctrnum b{font-size:18px}.ctrnum span{font-size:12px}.ctrnum p{font-size:15px}
-  .lsteps{grid-template-columns:1fr;gap:12px}
-  .lsteps>div:not(:last-child)::after{right:auto;left:50%;top:auto;bottom:-10px;transform:translateX(-50%) rotate(135deg);width:9px;height:9px}
-  .lsteps .num{font-size:26px}.lsteps b{font-size:17px}.lsteps p{font-size:14px}
-  .lback{height:auto;margin:10px 0 0}.lback svg{display:none}.lback span{position:static;display:block;font-size:14px;padding:10px;border:1.5px dashed var(--blue);border-radius:12px}
-  .ab2{margin-top:16px}.pc{padding:20px}.pc .tagp{font-size:60px}.pc .pn,html[data-lang="ja"] .pc .pn{font-size:24px}.pc .cn{font-size:16px}.pc .eff,html[data-lang="ja"] .pc .eff{font-size:19px;margin-top:10px}.pc .fit{font-size:14px}
-  .det{margin-top:16px}.dl{padding:20px}.dl .tg2{font-size:64px}.dl b{font-size:18px}.dl p{font-size:14px}.dl .yen{font-size:38px;margin-top:16px}
-  .two{margin-top:16px}.two .col{padding:18px}.two .ch{font-size:15px}.two .ch span{font-size:24px}.two li{font-size:15px;padding:9px 0}.two ul.big li{font-size:17px;padding:12px 0}
-  .taisei{font-size:13px;margin-top:16px}
-  .assets{grid-template-columns:1fr 1fr!important;gap:12px;margin-top:18px}.assets>div{min-height:0;padding:16px}.assets .num{font-size:26px}.assets b,html[data-lang="ja"] .assets b{font-size:17px;margin-top:8px}.assets p{font-size:13px}
-  .steps4{grid-template-columns:1fr 1fr!important;gap:14px;margin-top:24px!important}.steps4 .num{font-size:34px}.steps4 i{font-size:13px}.steps4 b,html[data-lang="ja"] .steps4 b{font-size:16px}
-  .bud{margin-top:16px}.bud>div,.bud>div+div{padding:14px 0!important;border-left:0!important}.bud .pl,html[data-lang="ja"] .bud .pl{font-size:20px}.bud .q{font-size:14px}
-  .bud .yen,html[data-lang="ja"] .bud .yen{font-size:40px}.bud .yen small{font-size:14px}.bud li{grid-template-columns:70px 1fr;font-size:14px}
-  .cond{font-size:14px;padding:14px;gap:6px}
-  .q3{font-size:15px;margin-top:18px}.q3 span{font-size:15px}
-  .legend,.glg{flex-wrap:wrap;gap:12px;font-size:12px}
-  .close{flex-direction:column;align-items:flex-start;gap:10px;font-size:14px}.close .c2{text-align:left}
-  .mock-label{position:static!important;display:inline-block;margin-top:10px;white-space:normal;font-size:12px}
-  .tgt{font-size:14px}
-  .res div{font-size:14px}
-  .remain .g{grid-template-columns:1fr 1fr!important}
-  /* journey */
+html:not(.pres) .cover svg{display:none}
+html:not(.pres) .cover .to{font-size:13px}
+html:not(.pres) .cover h1,html:not(.pres)[data-lang="ja"] .cover h1{font-size:38px;margin-top:36px}
+html:not(.pres) .cover .subt,html:not(.pres)[data-lang="ja"] .cover .subt{font-size:16px;margin-top:16px}
+html:not(.pres) .cover .ken{font-size:12px}
+html:not(.pres) .cover .from{position:static;text-align:left;margin-top:28px;font-size:14px}
+html:not(.pres) .cover .from b{font-size:20px}
+html:not(.pres) .thanks h1{font-size:44px!important}
+html:not(.pres) .thanks .coinfo{position:static;margin-top:36px;font-size:14px}
+html:not(.pres) .thanks .coinfo b{font-size:20px}
+html:not(.pres) /* collapse grids */
+  .nums,html:not(.pres) .three,html:not(.pres) .ev,html:not(.pres) .ab2,html:not(.pres) .two,html:not(.pres) .det,html:not(.pres) .bud,html:not(.pres) .roles,html:not(.pres) .opp,html:not(.pres) .stmt,html:not(.pres) .chg,html:not(.pres) .inc,html:not(.pres) .res,html:not(.pres) .co,html:not(.pres) .ctr,html:not(.pres) .q3,html:not(.pres) .cond,html:not(.pres) .sum3>div,html:not(.pres) .hours{grid-template-columns:1fr!important;gap:14px}
+html:not(.pres) .nums,html:not(.pres) .n3s{margin-top:20px}
+html:not(.pres) .nums>div,html:not(.pres) .three>div,html:not(.pres) .ev>div{border-right:0!important;margin-right:0!important;padding:14px 0!important;border-bottom:1px solid var(--rule)}
+html:not(.pres) .nums .v{font-size:56px}
+html:not(.pres) .nums .v small{font-size:22px}
+html:not(.pres) .nums b{font-size:17px;margin-top:8px}
+html:not(.pres) .nums span{font-size:13px}
+html:not(.pres) .n3s .v{font-size:44px}
+html:not(.pres) .n3s .v small{font-size:20px}
+html:not(.pres) .n3s b{font-size:15px}
+html:not(.pres) .hero52{gap:16px;margin-top:20px;flex-wrap:wrap}
+html:not(.pres) .hero52 .bn{font-size:88px}
+html:not(.pres) .hero52 .bn small{font-size:32px}
+html:not(.pres) .hero52 b{font-size:17px}
+html:not(.pres) .hero52 span{font-size:12px}
+html:not(.pres) .big3{margin-top:16px}
+html:not(.pres) .big3 .h,html:not(.pres) .three .h{font-size:24px}
+html:not(.pres) .big3 li,html:not(.pres) .three li{font-size:14px;padding:7px 0}
+html:not(.pres) .sum3{margin-top:18px}
+html:not(.pres) .sum3>div{padding:14px 0;gap:4px}
+html:not(.pres) .sum3 .l{font-size:13px}
+html:not(.pres) .sum3 p,html:not(.pres)[data-lang="ja"] .sum3 p{font-size:18px}
+html:not(.pres) .hbars{margin-top:18px}
+html:not(.pres) .hbars .r{grid-template-columns:96px 1fr 62px;gap:10px;padding:8px 0}
+html:not(.pres) .hbars .lb{font-size:14px}
+html:not(.pres) .hbars .tr{height:26px}
+html:not(.pres) .hbars .pv{font-size:20px}
+html:not(.pres) .ev .v{font-size:44px}
+html:not(.pres) .ev .v small{font-size:20px}
+html:not(.pres) .ev .w{font-size:16px}
+html:not(.pres) .ev .x{font-size:13px}
+html:not(.pres) .ctrnum .bn{font-size:84px}
+html:not(.pres) .ctrnum .bn small{font-size:32px}
+html:not(.pres) .ctrnum b{font-size:18px}
+html:not(.pres) .ctrnum span{font-size:12px}
+html:not(.pres) .ctrnum p{font-size:15px}
+html:not(.pres) .lsteps{grid-template-columns:1fr;gap:12px}
+html:not(.pres) .lsteps>div:not(:last-child)::after{right:auto;left:50%;top:auto;bottom:-10px;transform:translateX(-50%) rotate(135deg);width:9px;height:9px}
+html:not(.pres) .lsteps .num{font-size:26px}
+html:not(.pres) .lsteps b{font-size:17px}
+html:not(.pres) .lsteps p{font-size:14px}
+html:not(.pres) .lback{height:auto;margin:10px 0 0}
+html:not(.pres) .lback svg{display:none}
+html:not(.pres) .lback span{position:static;display:block;font-size:14px;padding:10px;border:1.5px dashed var(--blue);border-radius:12px}
+html:not(.pres) .ab2{margin-top:16px}
+html:not(.pres) .pc{padding:20px}
+html:not(.pres) .pc .tagp{font-size:60px}
+html:not(.pres) .pc .pn,html:not(.pres)[data-lang="ja"] .pc .pn{font-size:24px}
+html:not(.pres) .pc .cn{font-size:16px}
+html:not(.pres) .pc .eff,html:not(.pres)[data-lang="ja"] .pc .eff{font-size:19px;margin-top:10px}
+html:not(.pres) .pc .fit{font-size:14px}
+html:not(.pres) .det{margin-top:16px}
+html:not(.pres) .dl{padding:20px}
+html:not(.pres) .dl .tg2{font-size:64px}
+html:not(.pres) .dl b{font-size:18px}
+html:not(.pres) .dl p{font-size:14px}
+html:not(.pres) .dl .yen{font-size:38px;margin-top:16px}
+html:not(.pres) .two{margin-top:16px}
+html:not(.pres) .two .col{padding:18px}
+html:not(.pres) .two .ch{font-size:15px}
+html:not(.pres) .two .ch span{font-size:24px}
+html:not(.pres) .two li{font-size:15px;padding:9px 0}
+html:not(.pres) .two ul.big li{font-size:17px;padding:12px 0}
+html:not(.pres) .taisei{font-size:13px;margin-top:16px}
+html:not(.pres) .assets{grid-template-columns:1fr 1fr!important;gap:12px;margin-top:18px}
+html:not(.pres) .assets>div{min-height:0;padding:16px}
+html:not(.pres) .assets .num{font-size:26px}
+html:not(.pres) .assets b,html:not(.pres)[data-lang="ja"] .assets b{font-size:17px;margin-top:8px}
+html:not(.pres) .assets p{font-size:13px}
+html:not(.pres) .steps4{grid-template-columns:1fr 1fr!important;gap:14px;margin-top:24px!important}
+html:not(.pres) .steps4 .num{font-size:34px}
+html:not(.pres) .steps4 i{font-size:13px}
+html:not(.pres) .steps4 b,html:not(.pres)[data-lang="ja"] .steps4 b{font-size:16px}
+html:not(.pres) .bud{margin-top:16px}
+html:not(.pres) .bud>div,html:not(.pres) .bud>div+div{padding:14px 0!important;border-left:0!important}
+html:not(.pres) .bud .pl,html:not(.pres)[data-lang="ja"] .bud .pl{font-size:20px}
+html:not(.pres) .bud .q{font-size:14px}
+html:not(.pres) .bud .yen,html:not(.pres)[data-lang="ja"] .bud .yen{font-size:40px}
+html:not(.pres) .bud .yen small{font-size:14px}
+html:not(.pres) .bud li{grid-template-columns:70px 1fr;font-size:14px}
+html:not(.pres) .cond{font-size:14px;padding:14px;gap:6px}
+html:not(.pres) .q3{font-size:15px;margin-top:18px}
+html:not(.pres) .q3 span{font-size:15px}
+html:not(.pres) .legend,html:not(.pres) .glg{flex-wrap:wrap;gap:12px;font-size:12px}
+html:not(.pres) .close{flex-direction:column;align-items:flex-start;gap:10px;font-size:14px}
+html:not(.pres) .close .c2{text-align:left}
+html:not(.pres) .mock-label{position:static!important;display:inline-block;margin-top:10px;white-space:normal;font-size:12px}
+html:not(.pres) .tgt{font-size:14px}
+html:not(.pres) .res div{font-size:14px}
+html:not(.pres) .remain .g{grid-template-columns:1fr 1fr!important}
+html:not(.pres) /* journey */
   .jr{height:auto;margin-top:14px}
-  .jr .line,.jr .node{display:none}
-  .jr .q{position:static!important;width:auto!important;margin:0 0 10px!important;font-size:14px}
-  .jr .q b{font-size:15px}
-  .jr .q::after{display:none}
-  .hours{margin-top:10px}.hours .lab{font-size:13px}
-  /* tables */
-  table.t td,table.t th,.dec table.t td,.apx table.t td,table.dt td,.ctab td{font-size:14px!important;padding:10px 10px 10px 0!important}
-  table.t th,.ctab th{font-size:12px!important}
-  table.dt td.q{font-size:16px!important;width:auto}
-  .ctab td:first-child{width:auto}
-  .apx h2{font-size:22px!important}
-  /* horizontal scroll for wide diagrams */
+html:not(.pres) .jr .line,html:not(.pres) .jr .node{display:none}
+html:not(.pres) .jr .q{position:static!important;width:auto!important;margin:0 0 10px!important;font-size:14px}
+html:not(.pres) .jr .q b{font-size:15px}
+html:not(.pres) .jr .q::after{display:none}
+html:not(.pres) .hours{margin-top:10px}
+html:not(.pres) .hours .lab{font-size:13px}
+html:not(.pres) /* tables */
+  table.t td,html:not(.pres) table.t th,html:not(.pres) .dec table.t td,html:not(.pres) .apx table.t td,html:not(.pres) table.dt td,html:not(.pres) .ctab td{font-size:14px!important;padding:10px 10px 10px 0!important}
+html:not(.pres) table.t th,html:not(.pres) .ctab th{font-size:12px!important}
+html:not(.pres) table.dt td.q{font-size:16px!important;width:auto}
+html:not(.pres) .ctab td:first-child{width:auto}
+html:not(.pres) .apx h2{font-size:22px!important}
+html:not(.pres) /* horizontal scroll for wide diagrams */
   .hscroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:14px -20px 0;padding:0 20px 6px}
-  .hscroll::before{content:"← 옆으로 밀어서 보기 →";display:block;font-size:12px;color:var(--sub);margin-bottom:6px;position:sticky;left:0}
-  html[data-lang="ja"] .hscroll::before{content:"← 横にスクロール →"}
-  .hscroll>.map{min-width:980px}
-  .hscroll>.lane{min-width:1100px}
-  .hscroll>.gantt{min-width:1050px}
-  .hscroll>.chev{min-width:900px}
-  .hscroll>table.t{min-width:620px}
-  .hscroll>.devs{display:flex!important;gap:20px;width:max-content}
-  .hscroll>.devs .dcol{width:290px}
-  .dcap{width:280px}
-  .hbar{height:auto;padding-top:50px}
-  .hbar .ax,.hbar .bf{top:20px}.hbar .mk{top:16px}
-  .hbar span.tk:nth-of-type(2),.hbar span.tk:nth-of-type(4){display:none}
-  .hbar .tk{font-size:12px}
-  .hbar .tl{position:static;display:block;transform:none!important;white-space:normal;font-size:13px;margin-top:4px}
-  .ctab,.ctab tbody,.ctab tr,.ctab td{display:block;width:auto!important}
-  .ctab{margin-top:18px}
-  .ctab tr:first-child{display:none}
-  .ctab tr{padding:12px 0;border-bottom:1px solid var(--rule)}
-  .ctab td{border:0!important;padding:3px 0!important;font-size:14px!important}
-  .ctab td:first-child{font-size:13px!important;margin-bottom:4px}
-  .ctab td:nth-child(2)::before{content:"오사카  ";color:var(--sub);font-weight:600}
-  html[data-lang="ja"] .ctab td:nth-child(2)::before{content:"大阪  "}
-  .ctab td.to{padding:8px 10px!important;border-radius:8px;margin-top:4px}
-  .ctab td.to::before{content:"후쿠오카  ";font-weight:600}
-  html[data-lang="ja"] .ctab td.to::before{content:"福岡  "}
+html:not(.pres) .hscroll::before{content:"← 옆으로 밀어서 보기 →";display:block;font-size:12px;color:var(--sub);margin-bottom:6px;position:sticky;left:0}
+html:not(.pres)[data-lang="ja"] .hscroll::before{content:"← 横にスクロール →"}
+html:not(.pres) .hscroll>.map{min-width:980px}
+html:not(.pres) .hscroll>.lane{min-width:1100px}
+html:not(.pres) .hscroll>.gantt{min-width:1050px}
+html:not(.pres) .hscroll>.chev{min-width:900px}
+html:not(.pres) .hscroll>table.t{min-width:620px}
+html:not(.pres) .hscroll>.devs{display:flex!important;gap:20px;width:max-content}
+html:not(.pres) .hscroll>.devs .dcol{width:290px}
+html:not(.pres) .dcap{width:280px}
+html:not(.pres) .hbar{height:auto;padding-top:50px}
+html:not(.pres) .hbar .ax,html:not(.pres) .hbar .bf{top:20px}
+html:not(.pres) .hbar .mk{top:16px}
+html:not(.pres) .hbar span.tk:nth-of-type(2),html:not(.pres) .hbar span.tk:nth-of-type(4){display:none}
+html:not(.pres) .hbar .tk{font-size:12px}
+html:not(.pres) .hbar .tl{position:static;display:block;transform:none!important;white-space:normal;font-size:13px;margin-top:4px}
+html:not(.pres) .ctab,html:not(.pres) .ctab tbody,html:not(.pres) .ctab tr,html:not(.pres) .ctab td{display:block;width:auto!important}
+html:not(.pres) .ctab{margin-top:18px}
+html:not(.pres) .ctab tr:first-child{display:none}
+html:not(.pres) .ctab tr{padding:12px 0;border-bottom:1px solid var(--rule)}
+html:not(.pres) .ctab td{border:0!important;padding:3px 0!important;font-size:14px!important}
+html:not(.pres) .ctab td:first-child{font-size:13px!important;margin-bottom:4px}
+html:not(.pres) .ctab td:nth-child(2)::before{content:"오사카  ";color:var(--sub);font-weight:600}
+html:not(.pres)[data-lang="ja"] .ctab td:nth-child(2)::before{content:"大阪  "}
+html:not(.pres) .ctab td.to{padding:8px 10px!important;border-radius:8px;margin-top:4px}
+html:not(.pres) .ctab td.to::before{content:"후쿠오카  ";font-weight:600}
+html:not(.pres)[data-lang="ja"] .ctab td.to::before{content:"福岡  "}
 }
 
 
@@ -734,24 +791,35 @@ html[data-lang="ja"] .cflow b{font-size:19px}
 .c2 .ctab td,.c2 .ctab th{font-size:20px!important;padding:16px 14px 16px 0!important}
 .c2 .ctab td:first-child{width:150px}
 @media (max-width:1099px){
-  .cph{grid-template-columns:1fr 1fr;height:auto;gap:10px;margin-top:16px}
-  .cph .p1{grid-column:1/3;aspect-ratio:4/3}
-  .cph figure:not(.p1){aspect-ratio:1/1}
-  .cph figcaption{font-size:11px;left:8px;bottom:8px;padding:3px 8px}
-  .cph .p1 figcaption{display:none}
-  .cbadge{left:10px;bottom:10px;padding:8px 12px;gap:8px}.cbadge .num{font-size:40px}.cbadge .num small{font-size:18px}.cbadge b{font-size:14px}
-  .cflow{grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
-  .cflow>div{padding:12px}.cflow>div::after{display:none}
-  .cflow .num{font-size:24px}.cflow b,html[data-lang="ja"] .cflow b{font-size:15px}.cflow p{font-size:12px}
-  .c2{grid-template-columns:1fr;gap:16px;margin-top:16px}
-  .kph{height:auto;aspect-ratio:4/3}.kph figcaption{font-size:12px;padding:6px 10px}
-  .c2 .ctab td,.c2 .ctab th{font-size:14px!important;padding:3px 0!important}
+html:not(.pres) .cph{grid-template-columns:1fr 1fr;height:auto;gap:10px;margin-top:16px}
+html:not(.pres) .cph .p1{grid-column:1/3;aspect-ratio:4/3}
+html:not(.pres) .cph figure:not(.p1){aspect-ratio:1/1}
+html:not(.pres) .cph figcaption{font-size:11px;left:8px;bottom:8px;padding:3px 8px}
+html:not(.pres) .cph .p1 figcaption{display:none}
+html:not(.pres) .cbadge{left:10px;bottom:10px;padding:8px 12px;gap:8px}
+html:not(.pres) .cbadge .num{font-size:40px}
+html:not(.pres) .cbadge .num small{font-size:18px}
+html:not(.pres) .cbadge b{font-size:14px}
+html:not(.pres) .cflow{grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+html:not(.pres) .cflow>div{padding:12px}
+html:not(.pres) .cflow>div::after{display:none}
+html:not(.pres) .cflow .num{font-size:24px}
+html:not(.pres) .cflow b,html:not(.pres)[data-lang="ja"] .cflow b{font-size:15px}
+html:not(.pres) .cflow p{font-size:12px}
+html:not(.pres) .c2{grid-template-columns:1fr;gap:16px;margin-top:16px}
+html:not(.pres) .kph{height:auto;aspect-ratio:4/3}
+html:not(.pres) .kph figcaption{font-size:12px;padding:6px 10px}
+html:not(.pres) .c2 .ctab td,html:not(.pres) .c2 .ctab th{font-size:14px!important;padding:3px 0!important}
 }
 
 .vsA{margin-top:22px;display:flex;flex-direction:column;gap:6px}
 .vsA span{font-size:16px;color:var(--sub);font-weight:600}
 .vsA b{display:inline-block;align-self:flex-start;background:var(--blue-50);color:var(--blue);font-size:19px;font-weight:700;padding:4px 12px;border-radius:9999px}
-@media (max-width:1099px){.vsA{flex-direction:row;flex-wrap:wrap;align-items:center}.vsA span{width:100%;font-size:12px}.vsA b{font-size:13px}}
+@media (max-width:1099px){
+html:not(.pres) .vsA{flex-direction:row;flex-wrap:wrap;align-items:center}
+html:not(.pres) .vsA span{width:100%;font-size:12px}
+html:not(.pres) .vsA b{font-size:13px}
+}
 
 
 
@@ -771,18 +839,18 @@ html[data-lang="ja"] .cover h1{font-size:80px!important;letter-spacing:-.015em}
 .cover .cv-foot{position:absolute;left:96px;bottom:78px;display:flex;align-items:center;gap:18px;font-size:19px;font-weight:600}
 .cover .cv-foot i{display:block;width:1px;height:18px;background:#fff;opacity:.5}
 @media (max-width:1099px){
-  .slide.cover{display:flex;flex-direction:column;padding:0!important}
-  .cover .sig{position:static;width:110px;height:20px;margin:26px 20px 0;display:block!important}
-  .cover .cv-to{position:static;margin:18px 20px 0;font-size:12px}
-  .cover .cv-main{position:static;width:auto;padding:24px 20px 0}
-  .cover .eyebrow{font-size:11px}
-  .cover h1,html[data-lang="ja"] .cover h1{font-size:36px!important;margin-top:10px!important}
-  .cover h1 em::after{height:7px;bottom:3px}
-  .cover .subt,html[data-lang="ja"] .cover .subt{font-size:15px!important;margin-top:14px}
-  .cover .subt br{display:none}
-  .cover .cv-dots{display:none!important}
-  .cover .cv-art{display:block!important;position:static;overflow:visible;width:calc(100% - 40px);height:auto;margin:10px 20px 0;order:5}
-  .cover .cv-foot{position:static;order:6;margin:8px 20px 24px;font-size:13px;gap:10px}
+html:not(.pres) .slide.cover{display:flex;flex-direction:column;padding:0!important}
+html:not(.pres) .cover .sig{position:static;width:110px;height:20px;margin:26px 20px 0;display:block!important}
+html:not(.pres) .cover .cv-to{position:static;margin:18px 20px 0;font-size:12px}
+html:not(.pres) .cover .cv-main{position:static;width:auto;padding:24px 20px 0}
+html:not(.pres) .cover .eyebrow{font-size:11px}
+html:not(.pres) .cover h1,html:not(.pres)[data-lang="ja"] .cover h1{font-size:36px!important;margin-top:10px!important}
+html:not(.pres) .cover h1 em::after{height:7px;bottom:3px}
+html:not(.pres) .cover .subt,html:not(.pres)[data-lang="ja"] .cover .subt{font-size:15px!important;margin-top:14px}
+html:not(.pres) .cover .subt br{display:none}
+html:not(.pres) .cover .cv-dots{display:none!important}
+html:not(.pres) .cover .cv-art{display:block!important;position:static;overflow:visible;width:calc(100% - 40px);height:auto;margin:10px 20px 0;order:5}
+html:not(.pres) .cover .cv-foot{position:static;order:6;margin:8px 20px 24px;font-size:13px;gap:10px}
 }
 
 /* thanks slide */
@@ -794,12 +862,12 @@ html[data-lang="ja"] .thanks h1{font-size:88px!important;letter-spacing:-.015em}
 .thanks .coinfo{position:absolute!important;left:96px!important;right:auto!important;bottom:84px!important;top:auto!important;margin:0!important;font-size:20px;line-height:1.75;color:#fff;border-top:1px solid rgba(255,255,255,.35);padding-top:22px;width:820px}
 .thanks .coinfo b{font-family:var(--num);font-size:26px;letter-spacing:.06em;display:block;margin-bottom:6px}
 @media (max-width:1099px){
-  .slide.cover.thanks{display:flex;flex-direction:column;padding:26px 20px 24px!important}
-  .thanks .sig{position:static;width:110px;height:20px;display:block!important;margin:0!important}
-  .thanks h1,html[data-lang="ja"] .thanks h1{position:static;font-size:40px!important;margin-top:56px!important}
-  .thanks .subt,html[data-lang="ja"] .thanks .subt{position:static;font-size:15px!important;margin-top:10px}
-  .thanks .coinfo{position:static!important;width:auto;margin-top:40px!important;font-size:13px;padding-top:14px}
-  .thanks .coinfo b{font-size:18px}
+html:not(.pres) .slide.cover.thanks{display:flex;flex-direction:column;padding:26px 20px 24px!important}
+html:not(.pres) .thanks .sig{position:static;width:110px;height:20px;display:block!important;margin:0!important}
+html:not(.pres) .thanks h1,html:not(.pres)[data-lang="ja"] .thanks h1{position:static;font-size:40px!important;margin-top:56px!important}
+html:not(.pres) .thanks .subt,html:not(.pres)[data-lang="ja"] .thanks .subt{position:static;font-size:15px!important;margin-top:10px}
+html:not(.pres) .thanks .coinfo{position:static!important;width:auto;margin-top:40px!important;font-size:13px;padding-top:14px}
+html:not(.pres) .thanks .coinfo b{font-size:18px}
 }
 
 @media print{
@@ -811,6 +879,26 @@ html[data-lang="ja"] .thanks h1{font-size:88px!important;letter-spacing:-.015em}
   .slide{transform:none!important;position:relative}
   *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
 }
+
+/* ===== toolbar buttons ===== */
+.bar .tb{height:32px;padding:0 12px;border:1px solid rgba(255,255,255,.35);background:transparent;color:#fff;border-radius:8px;font:600 13px var(--sans-ko);cursor:pointer;display:inline-flex;align-items:center;gap:6px;text-decoration:none;margin-left:8px;white-space:nowrap}
+html[data-lang="ja"] .bar .tb{font-family:var(--sans-ja)}
+.bar .tb:hover{background:rgba(255,255,255,.12)}
+.bar .tb svg{width:14px;height:14px;fill:currentColor}
+/* ===== presentation mode ===== */
+html.pres,html.pres body{overflow:hidden;background:#000}
+html.pres .bar{display:none}
+html.pres .deck{padding:0}
+html.pres .wrap{display:none}
+html.pres .wrap.cur{display:block;position:fixed;margin:0;box-shadow:none;border-radius:0;z-index:50}
+.pctl{display:none}
+html.pres .pctl{display:flex;position:fixed;right:18px;bottom:16px;z-index:60;gap:8px;align-items:center;opacity:0;transition:opacity .3s}
+html.pres.ui .pctl{opacity:1}
+.pctl button,.pctl span{height:40px;min-width:40px;padding:0 12px;border:0;border-radius:8px;background:rgba(22,24,27,.78);color:#fff;font:600 14px var(--num);display:inline-flex;align-items:center;justify-content:center;cursor:pointer}
+.prot{display:none}
+@media (orientation:portrait) and (max-width:1099px){html.pres .prot{display:block;position:fixed;left:0;right:0;top:18px;text-align:center;color:#fff;font:600 13px var(--sans-ko);opacity:.8;z-index:60}}
+@media (max-width:1099px){.bar .tb .lb{display:none}.bar .tb{padding:0 10px;margin-left:6px}}
+@media print{.bar .tb,.pctl,.prot{display:none!important}}
 </style>
 </head>
 <body>
@@ -820,7 +908,11 @@ html[data-lang="ja"] .thanks h1{font-size:88px!important;letter-spacing:-.015em}
   <span class="sp"></span>
   <button id="prev" aria-label="prev">◀</button><span class="pg" id="pg">1 / 28</span><button id="next" aria-label="next">▶</button>
   <span class="seg"><button data-l="ko" class="on">한국어</button><button data-l="ja">日本語</button></span>
+  <button class="tb" id="pres" title="슬라이드 보기"><svg viewBox="0 0 16 16"><path d="M1 2h14v9H1zM2.5 3.5v6h11v-6zM6 13h4v1.5H6zM7 5l3.5 2L7 9z"/></svg><span class="lb"><k>슬라이드 보기</k><j>スライド表示</j></span></button>
+  <a class="tb" id="pdf" href="yamaya_proposal_ko.pdf" download title="PDF"><svg viewBox="0 0 16 16"><path d="M7.25 1h1.5v7.2l2.4-2.4 1.06 1.06L8 11.06 3.8 6.86 4.86 5.8l2.4 2.4zM2 12.5h1.5V14h9v-1.5H14V15.5H2z"/></svg><span class="lb">PDF</span></a>
 </div>
+<div class="pctl"><span id="ppg">1 / 28</span><button id="pprev" aria-label="prev">‹</button><button id="pnext" aria-label="next">›</button><button id="pexit" aria-label="exit">✕</button></div>
+<div class="prot"><k>가로로 돌리면 더 크게 보입니다</k><j>横向きにすると大きく表示されます</j></div>
 <main class="deck" id="deck">
 <!--S00-->
 <section class="slide cover">
@@ -1382,7 +1474,7 @@ html[data-lang="ja"] .thanks h1{font-size:88px!important;letter-spacing:-.015em}
   const wraps=[...document.querySelectorAll('.wrap')];
   const mq=window.matchMedia('(max-width:1099px)');
   document.querySelectorAll('.map,.lane,.gantt,.chev,table.t:not(.ctab),.devs').forEach(el=>{const h=document.createElement('div');h.className='hscroll';el.parentNode.insertBefore(h,el);h.appendChild(el);});
-  function fit(){if(mq.matches){root.classList.add('m');wraps.forEach(w=>{w.style.width='';w.style.height='';w.firstChild.style.transform='';});return;}root.classList.remove('m');const cw=document.documentElement.clientWidth||window.innerWidth;const W=Math.min(cw-16,1600);const k=W/1600;wraps.forEach(w=>{w.style.width=W+'px';w.style.height=(900*k)+'px';w.firstChild.style.transform='scale('+k+')';});}
+  function fit(){if(root.classList.contains('pres')){pfit();return;}if(mq.matches){root.classList.add('m');wraps.forEach(w=>{w.style.width='';w.style.height='';w.firstChild.style.transform='';});return;}root.classList.remove('m');const cw=document.documentElement.clientWidth||window.innerWidth;const W=Math.min(cw-16,1600);const k=W/1600;wraps.forEach(w=>{w.style.width=W+'px';w.style.height=(900*k)+'px';w.firstChild.style.transform='scale('+k+')';});}
   fit();addEventListener('resize',fit);
   let target=null;
   function cur(){if(target!==null)return target;let best=0,bd=1e9;wraps.forEach((w,i)=>{const d=Math.abs(w.getBoundingClientRect().top-64);if(d<bd){bd=d;best=i}});return best}
@@ -1391,9 +1483,33 @@ html[data-lang="ja"] .thanks h1{font-size:88px!important;letter-spacing:-.015em}
   let st;function upd(){const i=cur();pg.textContent=(i+1)+' / '+wraps.length;clearTimeout(st);st=setTimeout(()=>{target=null;setHash(cur())},250)}
   addEventListener('scroll',upd,{passive:true});
   function go(i){i=Math.max(0,Math.min(wraps.length-1,i));target=i;pg.textContent=(i+1)+' / '+wraps.length;window.scrollTo({top:wraps[i].offsetTop-64,behavior:'smooth'});}
+
+  // ---- PDF ----
+  const pdf=document.getElementById('pdf');
+  function pdfHref(){return 'yamaya_proposal_'+(root.dataset.lang||'ko')+'.pdf'}
+  pdf.addEventListener('click',e=>{e.preventDefault();const h=pdfHref();
+    if(location.protocol==='file:'){window.print();return}
+    fetch(h,{method:'HEAD'}).then(r=>{if(r.ok){const a=document.createElement('a');a.href=h;a.download=h;document.body.appendChild(a);a.click();a.remove()}else window.print()}).catch(()=>window.print())});
+  // ---- presentation ----
+  let pi=0,uiT;
+  const ppg=document.getElementById('ppg');
+  function pfit(){const W=innerWidth,H=innerHeight,k=Math.min(W/1600,H/900);wraps.forEach((w,i)=>{w.classList.toggle('cur',i===pi);if(i===pi){w.style.width=(1600*k)+'px';w.style.height=(900*k)+'px';w.style.left=((W-1600*k)/2)+'px';w.style.top=((H-900*k)/2)+'px';w.firstChild.style.transform='scale('+k+')'}});ppg.textContent=(pi+1)+' / '+wraps.length}
+  function pgo(i){pi=Math.max(0,Math.min(wraps.length-1,i));pfit();showUI()}
+  function showUI(){root.classList.add('ui');clearTimeout(uiT);uiT=setTimeout(()=>root.classList.remove('ui'),2200)}
+  function enterPres(){pi=cur();root.classList.add('pres');pfit();showUI();const el=document.documentElement;if(el.requestFullscreen){el.requestFullscreen().catch(()=>{})}else if(el.webkitRequestFullscreen){try{el.webkitRequestFullscreen()}catch(e){}}}
+  function exitPres(){if(!root.classList.contains('pres'))return;root.classList.remove('pres','ui');wraps.forEach(w=>{w.classList.remove('cur');w.style.left='';w.style.top=''});fit();target=null;window.scrollTo({top:wraps[pi].offsetTop-64});setHash(pi);upd();if(document.fullscreenElement&&document.exitFullscreen)document.exitFullscreen().catch(()=>{})}
+  document.getElementById('pres').onclick=enterPres;
+  document.getElementById('pexit').onclick=e=>{e.stopPropagation();exitPres()};
+  document.getElementById('pprev').onclick=e=>{e.stopPropagation();pgo(pi-1)};
+  document.getElementById('pnext').onclick=e=>{e.stopPropagation();pgo(pi+1)};
+  document.addEventListener('fullscreenchange',()=>{if(!document.fullscreenElement)exitPres()});
+  document.getElementById('deck').addEventListener('click',e=>{if(!root.classList.contains('pres'))return;if(e.target.closest('a,button'))return;(e.clientX>innerWidth/2)?pgo(pi+1):pgo(pi-1)});
+  addEventListener('mousemove',()=>{if(root.classList.contains('pres'))showUI()});
+  let tx=null;addEventListener('touchstart',e=>{if(root.classList.contains('pres'))tx=e.touches[0].clientX},{passive:true});
+  addEventListener('touchend',e=>{if(!root.classList.contains('pres')||tx===null)return;const dx=e.changedTouches[0].clientX-tx;tx=null;if(Math.abs(dx)>40){dx<0?pgo(pi+1):pgo(pi-1)}else showUI()},{passive:true});
   document.getElementById('prev').onclick=()=>go(cur()-1);
   document.getElementById('next').onclick=()=>go(cur()+1);
-  addEventListener('keydown',e=>{if(['ArrowRight','PageDown','ArrowDown'].includes(e.key)){e.preventDefault();go(cur()+1)}if(['ArrowLeft','PageUp','ArrowUp'].includes(e.key)){e.preventDefault();go(cur()-1)}});
+  addEventListener('keydown',e=>{if(root.classList.contains('pres')){if(['ArrowRight','PageDown','ArrowDown',' ','Enter'].includes(e.key)){e.preventDefault();pgo(pi+1)}else if(['ArrowLeft','PageUp','ArrowUp','Backspace'].includes(e.key)){e.preventDefault();pgo(pi-1)}else if(e.key==='Escape'){exitPres()}return}if(['ArrowRight','PageDown','ArrowDown'].includes(e.key)){e.preventDefault();go(cur()+1)}if(['ArrowLeft','PageUp','ArrowUp'].includes(e.key)){e.preventDefault();go(cur()-1)}});
   function setLang(l,keep){const i=keep!==undefined?keep:cur();root.dataset.lang=l;root.lang=l;document.querySelectorAll('.seg button').forEach(b=>b.classList.toggle('on',b.dataset.l===l));document.title=l==='ja'?'FLYING JAPAN × やまや 年間パートナーシップのご提案':'FLYING JAPAN × 야마야 연간 파트너십 제안';fit();window.scrollTo({top:wraps[i].offsetTop-64});setHash(i);try{localStorage.setItem('yl',l)}catch(e){}}
   document.querySelectorAll('.seg button').forEach(b=>b.onclick=()=>setLang(b.dataset.l));
   const m=location.hash.match(/^#(ko|ja)(?:-p(\d+))?$/);
