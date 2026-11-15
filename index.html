@@ -1513,7 +1513,7 @@ html.pres.ui .pctl{opacity:1}
   function setLang(l,keep){const i=keep!==undefined?keep:cur();root.dataset.lang=l;root.lang=l;document.querySelectorAll('.seg button').forEach(b=>b.classList.toggle('on',b.dataset.l===l));document.title=l==='ja'?'FLYING JAPAN × やまや 年間パートナーシップのご提案':'FLYING JAPAN × 야마야 연간 파트너십 제안';fit();window.scrollTo({top:wraps[i].offsetTop-64});setHash(i);try{localStorage.setItem('yl',l)}catch(e){}}
   document.querySelectorAll('.seg button').forEach(b=>b.onclick=()=>setLang(b.dataset.l));
   const m=location.hash.match(/^#(ko|ja)(?:-p(\d+))?$/);
-  if(m){setTimeout(()=>setLang(m[1],m[2]?Math.min(wraps.length,+m[2])-1:0),50)}else{try{const s=localStorage.getItem('yl');if(s)setLang(s,0)}catch(e){}}
+  if(m){setTimeout(()=>setLang(m[1],m[2]?Math.min(wraps.length,+m[2])-1:0),50)}
   upd();
   // live clock on PASS mock
   const ck=document.querySelector('.clock');
