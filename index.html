@@ -870,6 +870,32 @@ html:not(.pres) .thanks .coinfo{position:static!important;width:auto;margin-top:
 html:not(.pres) .thanks .coinfo b{font-size:18px}
 }
 
+/* ===== B plan emphasis ===== */
+.ab2{grid-template-columns:minmax(0,1fr) minmax(0,1.32fr)!important;align-items:stretch}
+.pc.a{background:#fff!important;border:1.5px solid var(--rule)!important;box-shadow:none!important}
+.pc.a .pn{color:var(--ink)!important}
+.pc.a .tagp{color:#F0F0F0!important}
+.pc.b{position:relative;background:var(--blue)!important;border:0!important;color:#fff!important;box-shadow:0 18px 40px rgba(9,30,66,.22)!important}
+.pc.b .pn,.pc.b .cn,.pc.b .eff{color:#fff!important}
+.pc.b .tagp{color:rgba(255,255,255,.16)!important}
+.pc.b .inner{background:rgba(255,255,255,.12)!important;border:1px solid rgba(255,255,255,.4)!important;border-style:solid!important}
+.pc.b .inner b{color:#fff!important}.pc.b .inner span{color:#D0E4FF!important}
+.pc.b .fit{border-color:rgba(255,255,255,.3)!important;color:#EAF3FF!important}.pc.b .fit b{color:#A3C9FF!important}
+.bbadge{position:absolute;top:-16px;left:28px;background:#fff;color:var(--blue);font-size:17px;font-weight:700;padding:6px 14px;border-radius:9999px;box-shadow:0 1px 2px rgba(9,30,66,.18);border:1.5px solid var(--blue)}
+.bud{grid-template-columns:minmax(0,1fr) minmax(0,1.22fr)!important;gap:28px!important;border-top:0!important;align-items:start}
+.bud>div{border:0!important;padding:30px 32px!important;border-radius:16px}
+.bud>div:first-child{background:#fff;border:1.5px solid var(--rule)!important}
+.bud>div:first-child .yen{color:var(--ink)!important}
+.bud>div:last-child{position:relative;background:var(--blue);color:#fff;box-shadow:0 18px 40px rgba(9,30,66,.22)}
+.bud>div:last-child .pl,.bud>div:last-child .yen{color:#fff!important}
+.bud>div:last-child .q,.bud>div:last-child .yen small{color:#D0E4FF!important}
+.bud>div:last-child li{border-color:rgba(255,255,255,.3)!important}
+.bud>div:last-child li b{color:#A3C9FF!important}.bud>div:last-child li span{color:#fff}
+@media (max-width:1099px){
+  html:not(.pres) .bbadge{position:static;display:inline-block;align-self:flex-start;width:auto;font-size:12px;margin-bottom:10px}
+  html:not(.pres) .bud>div:first-child,html:not(.pres) .bud>div:last-child{padding:18px!important}
+}
+
 @media print{
   @page{size:1600px 900px;margin:0}
   html,body{background:var(--face);overflow:visible}
@@ -1117,7 +1143,7 @@ html.pres.ui .pctl{opacity:1}
       <p class="eff"><k>알고, 찾아온다</k><j>知って、訪れる</j></p>
       <div class="fit"><b><k>이럴 때</k><j>こんな場合に</j></b><k>현장 운영은 그대로 두고, 한국 여행자의 반응부터 볼 때</k><j>現場の運営はそのままに、まず韓国人旅行者の反応を見たいとき</j></div>
     </div>
-    <div class="pc b">
+    <div class="pc b"><span class="bbadge"><k>A안보다 넓은 범위</k><j>Aプランより広い範囲</j></span>
       <div class="tagp">B</div>
       <div class="pn"><k>상품·예약 구축</k><j>商品・予約の仕組みづくり</j></div>
       <div class="cn"><k>예약 플랫폼 Trip에 연결</k><j>予約プラットフォームTripにつなぐ</j></div>
