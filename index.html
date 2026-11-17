@@ -984,6 +984,16 @@ html[data-lang="ja"] .kr-zone .z,html[data-lang="ko"] .kr-zone .z{font-family:in
   html:not(.pres) .kr-scope>div{padding:14px}html:not(.pres) .kr-scope .tg{font-size:12px}html:not(.pres) .kr-scope li{font-size:13px;padding-left:14px}html:not(.pres) .kr-scope li::before{top:10px;width:5px;height:5px}
 }
 
+/* monthly cost */
+.bud .yen.mo{display:flex;align-items:baseline;gap:8px;font-family:var(--sans-ko);font-size:26px!important;font-weight:700;line-height:1;margin-top:14px}
+html[data-lang="ja"] .bud .yen.mo{font-family:var(--sans-ja)}
+.bud .yen.mo .num{font-size:88px;letter-spacing:-.02em}
+.bud .yen.mo em{font-style:normal;font-size:30px}
+.bud .yr{font-size:19px;font-weight:600;margin-top:12px;color:var(--sub)}
+.bud>div:last-child .yr{color:#D0E4FF}
+.bud>div:first-child .yen.mo{color:var(--ink)}
+@media (max-width:1099px){html:not(.pres) .bud .yen.mo{font-size:16px!important}html:not(.pres) .bud .yen.mo .num{font-size:48px}html:not(.pres) .bud .yen.mo em{font-size:18px}html:not(.pres) .bud .yr{font-size:12px}}
+
 @media print{
   @page{size:1600px 900px;margin:0}
   html,body{background:var(--face);overflow:visible}
@@ -1060,7 +1070,7 @@ html.pres.ui .pctl{opacity:1}
 <section class="slide">
   <div class="hd"><span><k>제안 요약</k><j>ご提案概要</j></span><span class="no">01</span></div>
   <h2><k>한국 여행자의 길목에 야마야를 세웁니다</k><j>韓国人旅行者の動線に、貴社の場をつくります</j></h2>
-  <p class="sub"><k>81/82 커뮤니티에서 함께해 온 관계를 한 단계 넓히는 제안입니다.</k><j>81/82コミュニティでご一緒してきた関係を、一歩進めるご提案です。</j></p>
+  <p class="sub"><k>지금까지 함께해 온 관계를 한 단계 넓히는 제안입니다.</k><j>これまでご一緒してきた関係を、一歩進めるご提案です。</j></p>
   <div class="sum3">
     <div><span class="l"><k>무엇을</k><j>何を</j></span><p><k>FLYING이 운영하는 커뮤니티·PASS·Trip에 야마야를 연결합니다</k><j>FLYINGが運営するコミュニティ・PASS・Tripに、貴社をつなぎます</j></p></div>
     <div><span class="l"><k>역할</k><j>役割</j></span><p><k>운영은 <b>FLYING</b>, 결정은 <b class="y">야마야</b></k><j>運営は<b>FLYING</b>、決定は<b class="y">貴社</b></j></p></div>
@@ -1493,22 +1503,22 @@ html.pres.ui .pctl{opacity:1}
 
 <section class="slide">
   <div class="hd"><span><k>비용</k><j>費用</j></span><span class="no">22</span></div>
-  <h2><k>1년 비용</k><j>年間の概算費用</j></h2>
+  <h2><k>월 비용</k><j>月額の概算費用</j></h2>
   <div class="bud">
     <div>
       <div class="pl"><k>A 고객유치 캠페인</k><j>A 集客キャンペーン</j></div>
       <div class="q"><k>커뮤니티·PASS 연결</k><j>コミュニティ・PASS連携</j></div>
-      <div class="yen num">¥2,900,000<small><k>세전·1년</k><j>税別・年間</j></small></div>
+      <div class="yen mo"><k>월 약</k><j>月額 約</j><span class="num">24.2</span><em><k>만 엔</k><j>万円</j></em></div><div class="yr"><k>12개월 · 연 290만 엔 · 세전</k><j>12か月・年額290万円・税別</j></div>
       <ul><li><b><k>포함</k><j>含むもの</j></b><span><k>SEO 기사 12건 · 회원 모니터 4명 · 전용 페이지 · PASS 혜택 안내 · 문의 응대 · 분기 보고 4회</k><j>SEO記事12本・会員モニター4名・専用ページ・PASS特典のご案内・問い合わせ対応・四半期報告4回</j></span></li></ul>
     </div>
     <div>
       <div class="pl"><k>B 상품·예약 구축</k><j>B 商品・予約の仕組みづくり</j></div>
       <div class="q"><k>Trip 연결</k><j>Trip連携</j></div>
-      <div class="yen num">¥5,000,000<small><k>세전·1년</k><j>税別・年間</j></small></div>
+      <div class="yen mo"><k>월 약</k><j>月額 約</j><span class="num">41.7</span><em><k>만 엔</k><j>万円</j></em></div><div class="yr"><k>12개월 · 연 500만 엔 · 세전</k><j>12か月・年額500万円・税別</j></div>
       <ul><li><b><k>포함</k><j>含むもの</j></b><span><k>SEO 기사 24건 · 회원 모니터 6명 · 전용 페이지 · PASS 혜택 안내 · Trip 상품 1종 · 신청 절차·처리 · 분기 보고 4회</k><j>SEO記事24本・会員モニター6名・専用ページ・PASS特典のご案内・Trip商品1種・申込手順と処理・四半期報告4回</j></span></li><li><b><k>별도</k><j>別途</j></b><span><k>Trip 판매 실적에 따른 판매 수수료 (요율은 협의)</k><j>Trip販売実績に応じた販売手数料（料率は協議）</j></span></li></ul>
     </div>
   </div>
-  <div class="cond"><b><k>금액의 전제</k><j>お見積りの前提</j></b><span><k>수량은 13·14쪽 기준입니다. 범위가 정해지면 항목별 내역을 담은 정식 견적서를 제시합니다. 외부 도구·결제 수수료 부담은 별도로 정합니다.</k><j>数量は13・14ページのとおりです。範囲が決まり次第、項目別の内訳を記載した正式なお見積書をご提示します。外部ツール費用・決済手数料のご負担は別途協議のうえ決定します。</j></span></div>
+  <div class="cond"><b><k>금액의 전제</k><j>お見積りの前提</j></b><span><k>월 금액은 연간 금액을 12개월로 나눈 값(소수 첫째 자리 반올림)이며, 청구 방식은 협의로 정합니다. 수량은 13·14쪽 기준입니다. 범위가 정해지면 항목별 내역을 담은 정식 견적서를 제시합니다. 외부 도구·결제 수수료 부담은 별도로 정합니다.</k><j>月額は年額を12か月で割った金額（小数第1位で四捨五入）で、ご請求方法は協議のうえ決定します。数量は13・14ページのとおりです。範囲が決まり次第、項目別の内訳を記載した正式なお見積書をご提示します。外部ツール費用・決済手数料のご負担は別途協議のうえ決定します。</j></span></div>
 </section>
 
 <section class="slide dec">
