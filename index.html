@@ -950,6 +950,40 @@ html:not(.pres) .thanks .coinfo b{font-size:18px}
   html:not(.pres) .nfn{font-size:11px}
 }
 
+/* ===== Korea after-trip slide ===== */
+.kr{margin-top:46px}
+.kr-zone{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-bottom:12px}
+.kr-zone .z{font-family:var(--num);font-size:17px;font-weight:700;color:var(--sub);letter-spacing:.02em;border-bottom:2px solid #CDD1D8;padding-bottom:8px}
+.kr-zone .z2{color:var(--blue);border-color:var(--blue)}
+html[data-lang="ja"] .kr-zone .z,html[data-lang="ko"] .kr-zone .z{font-family:inherit}
+.kr-steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px}
+.kr-steps>div{position:relative;background:#F7F8FA;border-radius:12px;padding:28px 26px 30px;min-height:210px}
+.kr-steps>div:not(:last-child)::after{content:"";position:absolute;right:-16px;top:50%;width:11px;height:11px;border-top:3px solid var(--blue);border-right:3px solid var(--blue);transform:translateY(-50%) rotate(45deg)}
+.kr-steps .num{font-size:44px;color:var(--blue);line-height:1}
+.kr-steps b{display:block;font-size:26px;margin-top:16px;line-height:1.3}
+.kr-steps p{font-size:20px;color:var(--sub);margin-top:10px;line-height:1.5}
+.kr-steps .ko{background:#EAF3FF}
+.kr-steps .end{background:var(--blue);color:#fff}.kr-steps .end .num{color:#fff}.kr-steps .end p{color:#EAF3FF}
+.kr-scope{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:34px}
+.kr-scope>div{border-radius:12px;padding:24px 28px}
+.kr-scope .in{border:1.5px solid var(--blue)}
+.kr-scope .opt{border:1.5px dashed #A8AEB8}
+.kr-scope .tg{display:inline-block;font-size:16px;font-weight:700;border-radius:9999px;padding:4px 12px}
+.kr-scope .in .tg{background:var(--blue);color:#fff}.kr-scope .opt .tg{background:#F0F0F0;color:var(--sub)}
+.kr-scope ul{list-style:none;margin-top:10px}
+.kr-scope li{font-size:22px;line-height:1.5;padding:4px 0 4px 18px;position:relative}
+.kr-scope li::before{content:"";position:absolute;left:2px;top:16px;width:7px;height:7px;border-radius:50%;background:var(--blue)}
+.kr-scope .opt li::before{background:#A8AEB8}
+@media (max-width:1099px){
+  html:not(.pres) .kr{margin-top:16px}
+  html:not(.pres) .kr-zone{display:none}
+  html:not(.pres) .kr-steps{grid-template-columns:1fr 1fr;gap:10px}
+  html:not(.pres) .kr-steps>div{padding:12px}html:not(.pres) .kr-steps>div::after{display:none}
+  html:not(.pres) .kr-steps .num{font-size:24px}html:not(.pres) .kr-steps b{font-size:15px}html:not(.pres) .kr-steps p{font-size:12px}
+  html:not(.pres) .kr-scope{grid-template-columns:1fr;gap:10px;margin-top:14px}
+  html:not(.pres) .kr-scope>div{padding:14px}html:not(.pres) .kr-scope .tg{font-size:12px}html:not(.pres) .kr-scope li{font-size:13px;padding-left:14px}html:not(.pres) .kr-scope li::before{top:10px;width:5px;height:5px}
+}
+
 @media print{
   @page{size:1600px 900px;margin:0}
   html,body{background:var(--face);overflow:visible}
@@ -986,12 +1020,12 @@ html.pres.ui .pctl{opacity:1}
   <span class="t"><k>FLYING JAPAN × 야마야 · 연간 파트너십 제안</k><j>FLYING JAPAN × やまや 年間パートナーシップのご提案</j></span>
   <span class="tag">v7</span>
   <span class="sp"></span>
-  <button id="prev" aria-label="prev">◀</button><span class="pg" id="pg">1 / 28</span><button id="next" aria-label="next">▶</button>
+  <button id="prev" aria-label="prev">◀</button><span class="pg" id="pg">1 / 29</span><button id="next" aria-label="next">▶</button>
   <span class="seg"><button data-l="ja" class="on">日本語</button><button data-l="ko">한국어</button></span>
   <button class="tb" id="pres" title="슬라이드 보기"><svg viewBox="0 0 16 16"><path d="M1 2h14v9H1zM2.5 3.5v6h11v-6zM6 13h4v1.5H6zM7 5l3.5 2L7 9z"/></svg><span class="lb"><k>슬라이드 보기</k><j>スライド表示</j></span></button>
   <a class="tb" id="pdf" href="yamaya_proposal_ja.pdf" download title="PDF"><svg viewBox="0 0 16 16"><path d="M7.25 1h1.5v7.2l2.4-2.4 1.06 1.06L8 11.06 3.8 6.86 4.86 5.8l2.4 2.4zM2 12.5h1.5V14h9v-1.5H14V15.5H2z"/></svg><span class="lb">PDF</span></a>
 </div>
-<div class="pctl"><span id="ppg">1 / 28</span><button id="pprev" aria-label="prev">‹</button><button id="pnext" aria-label="next">›</button><button id="pexit" aria-label="exit">✕</button></div>
+<div class="pctl"><span id="ppg">1 / 29</span><button id="pprev" aria-label="prev">‹</button><button id="pnext" aria-label="next">›</button><button id="pexit" aria-label="exit">✕</button></div>
 <div class="prot"><k>가로로 돌리면 더 크게 보입니다</k><j>横向きにすると大きく表示されます</j></div>
 <main class="deck" id="deck">
 <!--S00-->
@@ -1189,7 +1223,31 @@ html.pres.ui .pctl{opacity:1}
 </section>
 
 <section class="slide">
-  <div class="hd"><span><k>왜 FLYING인가</k><j>FLYINGを選ぶ理由</j></span><span class="no">10</span></div>
+  <div class="hd"><span><k>제안 · 여행 후</k><j>ご提案 ・ 旅のあと</j></span><span class="no">10</span></div>
+  <h2><k>여행이 끝나도, 한국의 야마야로</k><j>旅のあとも、韓国のやまやへ</j></h2>
+  <p class="sub"><k>후쿠오카에서 만난 야마야를, 귀국 후 한국의 야마야 매장에서 다시 만나도록 동선을 잇습니다.</k><j>福岡で出会ったやまやを、帰国後に韓国のやまや店舗で再び楽しめるよう、動線をつなぎます。</j></p>
+  <div class="kr">
+    <div class="kr-zone"><span class="z"><k>여행 중 · 후쿠오카</k><j>旅行中 ・ 福岡</j></span><span class="z z2"><k>귀국 후 · 한국</k><j>帰国後 ・ 韓国</j></span></div>
+    <div class="kr-steps">
+      <div><span class="num">1</span><b><k>후쿠오카 매장 방문</k><j>福岡の店舗へ来店</j></b><p><k>PASS 제시 · 식사·견학·선물</k><j>PASS提示・お食事・見学・お土産</j></p></div>
+      <div><span class="num">2</span><b><k>후기가 커뮤니티에</k><j>口コミがコミュニティへ</j></b><p><k>"한국에도 있었네" 댓글 안내</k><j>「韓国にもあるんだ」をコメントで案内</j></p></div>
+      <div class="ko"><span class="num">3</span><b><k>귀국 후 한국 매장 안내</k><j>韓国店舗をご案内</j></b><p><k>카페 글·카카오로 가까운 매장 소개</k><j>カフェ記事・カカオで近くの店舗を紹介</j></p></div>
+      <div class="ko end"><span class="num">4</span><b><k>한국 야마야 재방문</k><j>韓国のやまやへ再来店</j></b><p><k>여행의 기억을 일상의 식사로</k><j>旅の記憶を、日常の食事へ</j></p></div>
+    </div>
+  </div>
+  <div class="kr-scope">
+    <div class="in"><span class="tg"><k>이번 범위 안에서</k><j>本提案の範囲内</j></span>
+      <ul><li><k>SEO 기사·전용 페이지에 "한국에서도 만나는 야마야" 안내 포함</k><j>SEO記事・専用ページで「韓国でも出会えるやまや」を紹介</j></li>
+      <li><k>카페 후기·질문에 한국 매장 정보로 답변</k><j>カフェの口コミ・質問に韓国店舗の情報で回答</j></li></ul></div>
+    <div class="opt"><span class="tg"><k>조건 협의 후 추가</k><j>条件協議のうえ追加</j></span>
+      <ul><li><k>귀국 후 카카오 채널 메시지</k><j>帰国後のカカオチャンネルメッセージ</j></li>
+      <li><k>후쿠오카 방문자 대상 한국 매장 재방문 혜택</k><j>福岡来店者向けの韓国店舗再来店特典</j></li></ul></div>
+  </div>
+  <p class="src"><k>한국 매장 목록과 혜택은 야마야·한국 매장 운영사와 확인한 내용으로만 안내합니다.</k><j>韓国店舗の一覧と特典は、貴社および韓国店舗の運営会社と確認した内容のみご案内します。</j></p>
+</section>
+
+<section class="slide">
+  <div class="hd"><span><k>왜 FLYING인가</k><j>FLYINGを選ぶ理由</j></span><span class="no">11</span></div>
   <h2><k>읽히는 데서 끝나지 않습니다</k><j>読まれて終わり、ではありません</j></h2>
   <div class="ev">
     <div><div class="v num">65,270<small><k>건</k><j>件</j></small></div><div class="w"><k>글로벌 OTA · 콘텐츠 경유 예약</k><j>グローバルOTA ・ コンテンツ経由の予約</j></div><div class="x"><k>2년 누적</k><j>2年累計</j></div>
@@ -1201,7 +1259,7 @@ html.pres.ui .pctl{opacity:1}
 </section>
 
 <section class="slide">
-  <div class="hd"><span><k>제안</k><j>ご提案</j></span><span class="no">11</span></div>
+  <div class="hd"><span><k>제안</k><j>ご提案</j></span><span class="no">12</span></div>
   <h2><k>연결 방식은 두 가지입니다</k><j>つなぎ方は2つです</j></h2>
   <div class="ab2">
     <div class="pc a">
@@ -1223,7 +1281,7 @@ html.pres.ui .pctl{opacity:1}
 </section>
 
 <section class="slide">
-  <div class="hd"><span><k>A안 상세</k><j>Aプラン詳細</j></span><span class="no">12</span></div>
+  <div class="hd"><span><k>A안 상세</k><j>Aプラン詳細</j></span><span class="no">13</span></div>
   <h2><k>A안 · 고객유치 캠페인</k><j>Aプラン：集客キャンペーン</j></h2>
   <div class="det">
     <div class="dl a"><div class="tg2">A</div><b><k>커뮤니티 · PASS 연결</k><j>コミュニティ・PASS連携</j></b><p><k>한국 여행자가 출발 전에 야마야를 알고, 찾아오게 합니다</k><j>韓国人旅行者が出発前に貴社を知り、訪れるようにします</j></p><div class="yen num">12<small style="font-size:.4em;margin-left:6px"><k>개월</k><j>か月</j></small></div><span class="tx"><k>연간 운영</k><j>年間運営</j></span></div>
@@ -1242,7 +1300,7 @@ html.pres.ui .pctl{opacity:1}
 </section>
 
 <section class="slide">
-  <div class="hd"><span><k>B안 상세</k><j>Bプラン詳細</j></span><span class="no">13</span></div>
+  <div class="hd"><span><k>B안 상세</k><j>Bプラン詳細</j></span><span class="no">14</span></div>
   <h2><k>B안 · 상품·예약 구축</k><j>Bプラン：商品・予約の仕組みづくり</j></h2>
   <div class="det">
     <div class="dl b"><div class="tg2">B</div><b><k>Trip 연결 + 유치 활동 확대</k><j>Trip連携＋集客施策の拡大</j></b><p><k>출발 전에 신청하고 찾아오는 흐름까지 만듭니다</k><j>出発前に申し込んで訪れる流れまでつくります</j></p><div class="vsA"><span><k>A안 대비</k><j>Aプラン比</j></span><b><k>SEO 기사 2배</k><j>SEO記事 2倍</j></b><b><k>회원 모니터 1.5배</k><j>会員モニター 1.5倍</j></b><b><k>+ 예약까지</k><j>＋予約まで</j></b></div><div class="yen num">12<small style="font-size:.4em;margin-left:6px"><k>개월</k><j>か月</j></small></div><span class="tx"><k>연간 운영</k><j>年間運営</j></span></div>
@@ -1262,7 +1320,7 @@ html.pres.ui .pctl{opacity:1}
 </section>
 
 <section class="slide">
-  <div class="hd"><span><k>A안 · 화면</k><j>Aプラン ・ 画面</j></span><span class="no">14</span></div>
+  <div class="hd"><span><k>A안 · 화면</k><j>Aプラン ・ 画面</j></span><span class="no">15</span></div>
   <h2><k>A안 · 이 세 화면이 열립니다</k><j>Aプラン：この3画面が届きます</j></h2>
   <span class="mock-label chip y"><k>협의용 시안 · 게재 내용은 야마야의 최종 확인을 거쳐 공개</k><j>協議用イメージ ・ 掲載内容は貴社の最終確認を経て公開</j></span>
   <div class="devs">
@@ -1324,7 +1382,7 @@ html.pres.ui .pctl{opacity:1}
 </section>
 
 <section class="slide">
-  <div class="hd"><span><k>B안 · 흐름</k><j>Bプラン ・ 流れ</j></span><span class="no">15</span></div>
+  <div class="hd"><span><k>B안 · 흐름</k><j>Bプラン ・ 流れ</j></span><span class="no">16</span></div>
   <h2><k>B안 · 신청은 FLYING, 결정은 매장</k><j>Bプラン：申込はFLYING、決定は店舗</j></h2>
   <p class="tgt" style="margin-top:12px"><b><k>대상</k><j>対象</j></b>　<k>예약제 체험 등 사전 신청이 가능한 구성 · 식사만의 예약은 받지 않으므로 제외</k><j>予約制の体験など事前申込が可能な内容 ・ お食事のみのご予約は受け付けていないため対象外</j></p>
   <div class="lane">
@@ -1364,7 +1422,7 @@ html.pres.ui .pctl{opacity:1}
 </section>
 
 <section class="slide">
-  <div class="hd"><span><k>파트너십 운영 구조</k><j>パートナーシップの運営体制</j></span><span class="no">16</span></div>
+  <div class="hd"><span><k>파트너십 운영 구조</k><j>パートナーシップの運営体制</j></span><span class="no">17</span></div>
   <h2><k>운영은 FLYING, 결정은 야마야</k><j>運営はFLYING、決定は貴社</j></h2>
   <div class="two">
     <div class="col f">
@@ -1380,7 +1438,7 @@ html.pres.ui .pctl{opacity:1}
 </section>
 
 <section class="slide stg">
-  <div class="hd"><span><k>진행</k><j>進め方</j></span><span class="no">17</span></div>
+  <div class="hd"><span><k>진행</k><j>進め方</j></span><span class="no">18</span></div>
   <h2><k>네 단계로 진행합니다</k><j>4つの段階で進めます</j></h2>
   <table class="t big4" style="margin-top:36px">
     <tr><th><k>단계</k><j>段階</j></th><th><k>FLYING이 운영</k><j>FLYINGの運営</j></th><th><k>야마야가 결정</k><j>貴社のご決定</j></th><th><k>끝난 상태</k><j>完了の状態</j></th></tr>
@@ -1392,7 +1450,7 @@ html.pres.ui .pctl{opacity:1}
 </section>
 
 <section class="slide">
-  <div class="hd"><span><k>스케줄</k><j>スケジュール</j></span><span class="no">18</span></div>
+  <div class="hd"><span><k>스케줄</k><j>スケジュール</j></span><span class="no">19</span></div>
   <h2><k>1년 진행 스케줄</k><j>年間スケジュール</j></h2>
   <div class="gantt">
     <div class="gr gq"><div class="gl"></div><div class="gqh" style="grid-column:2/5"><k>1분기 · 준비와 공개</k><j>第1四半期・準備と公開</j></div><div class="gqh" style="grid-column:5/8"><k>2분기 · 운영</k><j>第2四半期・運用</j></div><div class="gqh" style="grid-column:8/11"><k>3분기 · 운영·개선</k><j>第3四半期・運用と改善</j></div><div class="gqh" style="grid-column:11/14"><k>4분기 · 정리·다음 해 제안</k><j>第4四半期・総括と次年度提案</j></div><div class="gn"></div></div>
@@ -1404,7 +1462,7 @@ html.pres.ui .pctl{opacity:1}
 </section>
 
 <section class="slide">
-  <div class="hd"><span><k>성과 확인</k><j>効果の確認</j></span><span class="no">19</span></div>
+  <div class="hd"><span><k>성과 확인</k><j>効果の確認</j></span><span class="no">20</span></div>
   <h2><k>어디까지 갔는지 보고합니다</k><j>どこまで進んだかを報告します</j></h2>
   <div class="chev">
     <div class="s"><div class="tg">A·B</div><div class="b"><k>열람</k><j>閲覧</j></div><div class="how"><k>안내글·전용 페이지 조회</k><j>記事・専用ページの閲覧数</j></div></div>
@@ -1422,7 +1480,7 @@ html.pres.ui .pctl{opacity:1}
 </section>
 
 <section class="slide">
-  <div class="hd"><span><k>성과 확인</k><j>効果の確認</j></span><span class="no">20</span></div>
+  <div class="hd"><span><k>성과 확인</k><j>効果の確認</j></span><span class="no">21</span></div>
   <h2><k>1년 뒤 야마야에 남는 것</k><j>1年後、貴社に残るもの</j></h2>
   <div class="assets">
     <div><span class="num">01</span><b><k>한국어 안내 일체</k><j>韓国語案内一式</j></b><p><k>야마야가 확인을 마친 페이지·안내글</k><j>貴社確認済みのページ・案内記事</j></p></div>
@@ -1434,7 +1492,7 @@ html.pres.ui .pctl{opacity:1}
 </section>
 
 <section class="slide">
-  <div class="hd"><span><k>비용</k><j>費用</j></span><span class="no">21</span></div>
+  <div class="hd"><span><k>비용</k><j>費用</j></span><span class="no">22</span></div>
   <h2><k>1년 비용</k><j>年間の概算費用</j></h2>
   <div class="bud">
     <div>
@@ -1450,11 +1508,11 @@ html.pres.ui .pctl{opacity:1}
       <ul><li><b><k>포함</k><j>含むもの</j></b><span><k>SEO 기사 24건 · 회원 모니터 6명 · 전용 페이지 · PASS 혜택 안내 · Trip 상품 1종 · 신청 절차·처리 · 분기 보고 4회</k><j>SEO記事24本・会員モニター6名・専用ページ・PASS特典のご案内・Trip商品1種・申込手順と処理・四半期報告4回</j></span></li><li><b><k>별도</k><j>別途</j></b><span><k>Trip 판매 실적에 따른 판매 수수료 (요율은 협의)</k><j>Trip販売実績に応じた販売手数料（料率は協議）</j></span></li></ul>
     </div>
   </div>
-  <div class="cond"><b><k>금액의 전제</k><j>お見積りの前提</j></b><span><k>수량은 12·13쪽 기준입니다. 범위가 정해지면 항목별 내역을 담은 정식 견적서를 제시합니다. 외부 도구·결제 수수료 부담은 별도로 정합니다.</k><j>数量は12・13ページのとおりです。範囲が決まり次第、項目別の内訳を記載した正式なお見積書をご提示します。外部ツール費用・決済手数料のご負担は別途協議のうえ決定します。</j></span></div>
+  <div class="cond"><b><k>금액의 전제</k><j>お見積りの前提</j></b><span><k>수량은 13·14쪽 기준입니다. 범위가 정해지면 항목별 내역을 담은 정식 견적서를 제시합니다. 외부 도구·결제 수수료 부담은 별도로 정합니다.</k><j>数量は13・14ページのとおりです。範囲が決まり次第、項目別の内訳を記載した正式なお見積書をご提示します。外部ツール費用・決済手数料のご負担は別途協議のうえ決定します。</j></span></div>
 </section>
 
 <section class="slide dec">
-  <div class="hd"><span><k>결정</k><j>ご判断</j></span><span class="no">22</span></div>
+  <div class="hd"><span><k>결정</k><j>ご判断</j></span><span class="no">23</span></div>
   <h2><k>정할 것은 세 가지입니다</k><j>ご判断いただくのは3点です</j></h2>
   <table class="t" style="margin-top:36px">
     <tr><th><k>결정 항목</k><j>決定事項</j></th><th><k>선택</k><j>選択</j></th></tr>
@@ -1497,7 +1555,7 @@ html.pres.ui .pctl{opacity:1}
     <tr><td><k>신청·회신·결과 안내 절차, 매장용 안내 시트</k><j>申込・回答・結果連絡の手順、店舗向け案内シート</j></td><td class="dot n">—</td><td class="dot">●</td><td>③</td><td><k>FLYING이 시험 신청으로 확정·불가 안내를 실제 확인하고 기록</k><j>FLYINGがテスト申込で確定・不可の連絡を実際に確認し記録</j></td></tr>
     <tr><td><k>분기 보고 (일본어)</k><j>四半期報告（日本語）</j></td><td class="dot">●</td><td class="dot">●</td><td>④</td><td><k>연 4회. 확인된 수치와 FLYING의 제안을 구분해 기재</k><j>年4回。確認済みの数値とFLYINGの提案を区別して記載</j></td></tr>
   </table>
-  <p class="src"><k>단계: ① 범위 결정 ② 제작 ③ 공개 ④ 운영 (17쪽)</k><j>段階：① 範囲の決定 ② 制作 ③ 公開 ④ 運用（17ページ）</j></p>
+  <p class="src"><k>단계: ① 범위 결정 ② 제작 ③ 공개 ④ 운영 (18쪽)</k><j>段階：① 範囲の決定 ② 制作 ③ 公開 ④ 運用（18ページ）</j></p>
 </section>
 
 <section class="slide apx">
@@ -1515,9 +1573,10 @@ html.pres.ui .pctl{opacity:1}
     <tr><td><k>(B) 회신 수단·기한, 취소 기준, 정산 창구</k><j>（B）回答手段・期限、キャンセル基準、精算窓口</j></td><td><k>FLYING 안 제시 → 야마야 승인</k><j>FLYING案 → 貴社ご承認</j></td><td><k>기준안 · 기존 체험 예약·단체 창구와의 연결안</k><j>基準案・既存の体験予約／団体窓口との連携案</j></td><td>②</td></tr>
     <tr><td><k>사진 사용 범위</k><j>写真のご利用範囲</j></td><td><k>야마야 결정</k><j>貴社ご判断</j></td><td><k>사용처 목록 (이 제안서에는 미사용)</k><j>使用先の一覧（本資料では未使用）</j></td><td>②</td></tr>
     <tr><td><k>현장 이용·매출 데이터 집계 방법</k><j>来店・売上データの集計方法</j></td><td><k>FLYING 안 제시 → 야마야 승인</k><j>FLYING案 → 貴社ご承認</j></td><td><k>집계 양식</k><j>集計フォーマット</j></td><td>③</td></tr>
-    <tr><td><k>후쿠오카 대면 거점(센터 등)</k><j>福岡での対面拠点（センター等）</j></td><td><k>이번 범위 밖</k><j>本提案の範囲外</j></td><td><k>필요 시 별도 제안</k><j>必要に応じて別途ご提案</j></td><td><k>별도</k><j>別途</j></td></tr>
+    <tr><td><k>한국 매장 연계</k><j>韓国店舗との連携</j></td><td><k>야마야 확인 → 한국 운영사 협의</k><j>貴社ご確認 → 韓国運営会社と協議</j></td><td><k>대상 매장 목록 안내 방식 · 재방문 혜택 조건 안</k><j>対象店舗の案内方法・再来店特典の条件案</j></td><td>①</td></tr>
+      <tr><td><k>후쿠오카 대면 거점(센터 등)</k><j>福岡での対面拠点（センター等）</j></td><td><k>이번 범위 밖</k><j>本提案の範囲外</j></td><td><k>필요 시 별도 제안</k><j>必要に応じて別途ご提案</j></td><td><k>별도</k><j>別途</j></td></tr>
   </table>
-  <p class="src"><k>시점: ① 범위 결정 ② 제작 전 ③ 공개 전 (17쪽 단계)</k><j>時期：① 範囲の決定 ② 制作前 ③ 公開前（17ページの段階）</j></p>
+  <p class="src"><k>시점: ① 범위 결정 ② 제작 전 ③ 공개 전 (18쪽 단계)</k><j>時期：① 範囲の決定 ② 制作前 ③ 公開前（18ページの段階）</j></p>
 </section>
 
 <section class="slide apx">
@@ -1549,7 +1608,7 @@ html.pres.ui .pctl{opacity:1}
     </table>
     <table class="t">
       <tr><td><k>야마야 정보</k><j>貴社情報</j></td><td><k>야마야 공식 사이트(회사·팩토리 테라스·이용 안내), 2026.11.14 확인</k><j>貴社公式サイト（会社・ファクトリーテラス・ご利用案内）、2026年11月14日確認</j></td></tr>
-      <tr><td><k>체험 요금·역 도보</k><j>体験料金・駅からの徒歩</j></td><td><k>공개 여행 정보 사이트, 2026.11 열람 (06쪽 시안 한정)</k><j>公開旅行情報サイト、2026年11月閲覧（6ページの画面イメージのみ）</j></td></tr>
+      <tr><td><k>체험 요금·역 도보</k><j>体験料金・駅からの徒歩</j></td><td><k>공개 여행 정보 사이트, 2026.11 열람 (05쪽 시안 한정)</k><j>公開旅行情報サイト、2026年11月閲覧（5ページの画面イメージのみ）</j></td></tr>
       <tr><td><k>방일 한국인</k><j>訪日韓国人</j></td><td><k>JNTO 추계 2025년(2026.1.21 발표), 2026년 1~9월(2026.10.21 발표)</k><j>JNTO推計 2025年（2026年1月21日発表）、2026年1〜9月（同10月21日発表）</j></td></tr>
       <tr><td><k>규슈 입국</k><j>九州入国者</j></td><td><k>九州運輸局 2025년 확정치 (2026.3 보도)</k><j>九州運輸局 2025年確定値（2026年3月報道）</j></td></tr>
       <tr><td><k>정보원</k><j>情報源</j></td><td><k>観光庁 인바운드 소비동향조사 2025년 연차보고서</k><j>観光庁 インバウンド消費動向調査 2025年年次報告書</j></td></tr>
