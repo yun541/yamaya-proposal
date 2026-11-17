@@ -994,6 +994,36 @@ html[data-lang="ja"] .bud .yen.mo{font-family:var(--sans-ja)}
 .bud>div:first-child .yen.mo{color:var(--ink)}
 @media (max-width:1099px){html:not(.pres) .bud .yen.mo{font-size:16px!important}html:not(.pres) .bud .yen.mo .num{font-size:48px}html:not(.pres) .bud .yen.mo em{font-size:18px}html:not(.pres) .bud .yr{font-size:12px}}
 
+/* ===== simple monthly cost ===== */
+.cost{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.22fr);gap:30px;margin-top:64px;align-items:stretch}
+.cost>div{position:relative;border-radius:16px;padding:40px 44px}
+.cost .ca{background:#fff;border:1.5px solid var(--rule)}
+.cost .cb{background:var(--blue);color:#fff;box-shadow:0 18px 40px rgba(9,30,66,.22)}
+.cost .cn{font-size:26px;font-weight:700}
+.cost .cp{display:flex;align-items:baseline;gap:8px;margin-top:26px;line-height:1}
+.cost .cp .num{font-size:120px;letter-spacing:-.03em}
+.cost .cp em{font-style:normal;font-size:36px;font-weight:700}
+.cost .cp i{font-style:normal;font-size:28px;font-weight:600;color:var(--sub);margin-left:4px}
+.cost .cb .cp i{color:#D0E4FF}
+.cost .ca .cp .num{color:var(--ink)}
+.cost .ct{font-size:20px;font-weight:600;color:var(--sub);margin-top:16px}
+.cost .cb .ct{color:#D0E4FF}
+.cost .ci{word-break:keep-all;font-size:20px;line-height:1.6;margin-top:30px;padding-top:22px;border-top:1px solid var(--rule);color:var(--ink)}
+.cost .cb .ci{border-color:rgba(255,255,255,.3);color:#fff}
+@media (max-width:1099px){
+  html:not(.pres) .cost{grid-template-columns:1fr;gap:14px;margin-top:20px}
+  html:not(.pres) .cost>div{padding:20px}
+  html:not(.pres) .cost .cn{font-size:16px}html:not(.pres) .cost .cp{margin-top:12px}
+  html:not(.pres) .cost .cp .num{font-size:56px}html:not(.pres) .cost .cp em{font-size:20px}html:not(.pres) .cost .cp i{font-size:16px}
+  html:not(.pres) .cost .ct{font-size:12px;margin-top:8px}html:not(.pres) .cost .ci{font-size:13px;margin-top:14px;padding-top:12px}
+}
+
+.pc .plab{display:inline-block;align-self:flex-start;width:fit-content;font-size:20px;font-weight:800;letter-spacing:.02em;padding:6px 16px;border-radius:9999px;margin-bottom:14px}
+.pc.a .plab{background:#F0F0F0;color:var(--ink)}
+.pc.b .plab{background:#fff;color:var(--blue)}
+.pc.b .bbadge{left:auto!important;right:28px}
+@media (max-width:1099px){html:not(.pres) .pc .plab{font-size:13px;padding:4px 10px;margin-bottom:8px}}
+
 @media print{
   @page{size:1600px 900px;margin:0}
   html,body{background:var(--face);overflow:visible}
@@ -1273,14 +1303,14 @@ html.pres.ui .pctl{opacity:1}
   <h2><k>연결 방식은 두 가지입니다</k><j>つなぎ方は2つです</j></h2>
   <div class="ab2">
     <div class="pc a">
-      <div class="tagp">A</div>
+      <div class="plab"><k>A안</k><j>Aプラン</j></div>
       <div class="pn"><k>고객유치 캠페인</k><j>集客キャンペーン</j></div>
       <div class="cn"><k>커뮤니티 · PASS에 연결</k><j>コミュニティ・PASSにつなぐ</j></div>
       <p class="eff"><k>알고, 찾아온다</k><j>知って、訪れる</j></p>
       <div class="fit"><b><k>이럴 때</k><j>こんな場合に</j></b><k>현장 운영은 그대로 두고, 한국 여행자의 반응부터 볼 때</k><j>現場の運営はそのままに、まず韓国人旅行者の反応を見たいとき</j></div>
     </div>
     <div class="pc b"><span class="bbadge"><k>A안보다 넓은 범위</k><j>Aプランより広い範囲</j></span>
-      <div class="tagp">B</div>
+      <div class="plab"><k>B안</k><j>Bプラン</j></div>
       <div class="pn"><k>상품·예약 구축</k><j>商品・予約の仕組みづくり</j></div>
       <div class="cn"><k>예약 플랫폼 Trip에 연결</k><j>予約プラットフォームTripにつなぐ</j></div>
       <p class="eff"><k>출발 전에 신청하고, 찾아온다</k><j>出発前に申し込んで、訪れる</j></p>
@@ -1503,22 +1533,22 @@ html.pres.ui .pctl{opacity:1}
 
 <section class="slide">
   <div class="hd"><span><k>비용</k><j>費用</j></span><span class="no">22</span></div>
-  <h2><k>월 비용</k><j>月額の概算費用</j></h2>
-  <div class="bud">
-    <div>
-      <div class="pl"><k>A 고객유치 캠페인</k><j>A 集客キャンペーン</j></div>
-      <div class="q"><k>커뮤니티·PASS 연결</k><j>コミュニティ・PASS連携</j></div>
-      <div class="yen mo"><k>월 약</k><j>月額 約</j><span class="num">24.2</span><em><k>만 엔</k><j>万円</j></em></div><div class="yr"><k>12개월 · 연 290만 엔 · 세전</k><j>12か月・年額290万円・税別</j></div>
-      <ul><li><b><k>포함</k><j>含むもの</j></b><span><k>SEO 기사 12건 · 회원 모니터 4명 · 전용 페이지 · PASS 혜택 안내 · 문의 응대 · 분기 보고 4회</k><j>SEO記事12本・会員モニター4名・専用ページ・PASS特典のご案内・問い合わせ対応・四半期報告4回</j></span></li></ul>
+  <h2><k>월 비용</k><j>月額費用</j></h2>
+  <div class="cost">
+    <div class="ca">
+      <div class="cn"><k>A안 · 고객유치 캠페인</k><j>Aプラン ・ 集客キャンペーン</j></div>
+      <div class="cp"><span class="num">24.2</span><em><k>만 엔</k><j>万円</j></em><i><k>/ 월</k><j>／月</j></i></div>
+      <div class="ct"><k>세전 · 12개월</k><j>税別・12か月</j></div>
+      <p class="ci"><k>SEO 기사 12건 · 회원 모니터 4명 · 전용 페이지 · PASS 혜택 · 분기&nbsp;보고</k><j>SEO記事12本・会員モニター4名・専用ページ・PASS特典・四半期報告</j></p>
     </div>
-    <div>
-      <div class="pl"><k>B 상품·예약 구축</k><j>B 商品・予約の仕組みづくり</j></div>
-      <div class="q"><k>Trip 연결</k><j>Trip連携</j></div>
-      <div class="yen mo"><k>월 약</k><j>月額 約</j><span class="num">41.7</span><em><k>만 엔</k><j>万円</j></em></div><div class="yr"><k>12개월 · 연 500만 엔 · 세전</k><j>12か月・年額500万円・税別</j></div>
-      <ul><li><b><k>포함</k><j>含むもの</j></b><span><k>SEO 기사 24건 · 회원 모니터 6명 · 전용 페이지 · PASS 혜택 안내 · Trip 상품 1종 · 신청 절차·처리 · 분기 보고 4회</k><j>SEO記事24本・会員モニター6名・専用ページ・PASS特典のご案内・Trip商品1種・申込手順と処理・四半期報告4回</j></span></li><li><b><k>별도</k><j>別途</j></b><span><k>Trip 판매 실적에 따른 판매 수수료 (요율은 협의)</k><j>Trip販売実績に応じた販売手数料（料率は協議）</j></span></li></ul>
+    <div class="cb">
+      <span class="bbadge"><k>A안보다 넓은 범위</k><j>Aプランより広い範囲</j></span>
+      <div class="cn"><k>B안 · 상품·예약 구축</k><j>Bプラン ・ 商品・予約の仕組みづくり</j></div>
+      <div class="cp"><span class="num">41.7</span><em><k>만 엔</k><j>万円</j></em><i><k>/ 월</k><j>／月</j></i></div>
+      <div class="ct"><k>세전 · 12개월 · Trip 판매 수수료 별도</k><j>税別・12か月・Trip販売手数料は別途</j></div>
+      <p class="ci"><k>SEO 기사 24건 · 회원 모니터 6명 · 전용 페이지 · PASS 혜택 · Trip 상품·예약 · 분기&nbsp;보고</k><j>SEO記事24本・会員モニター6名・専用ページ・PASS特典・Trip商品・予約・四半期報告</j></p>
     </div>
   </div>
-  <div class="cond"><b><k>금액의 전제</k><j>お見積りの前提</j></b><span><k>월 금액은 연간 금액을 12개월로 나눈 값(소수 첫째 자리 반올림)이며, 청구 방식은 협의로 정합니다. 수량은 13·14쪽 기준입니다. 범위가 정해지면 항목별 내역을 담은 정식 견적서를 제시합니다. 외부 도구·결제 수수료 부담은 별도로 정합니다.</k><j>月額は年額を12か月で割った金額（小数第1位で四捨五入）で、ご請求方法は協議のうえ決定します。数量は13・14ページのとおりです。範囲が決まり次第、項目別の内訳を記載した正式なお見積書をご提示します。外部ツール費用・決済手数料のご負担は別途協議のうえ決定します。</j></span></div>
 </section>
 
 <section class="slide dec">
@@ -1583,7 +1613,8 @@ html.pres.ui .pctl{opacity:1}
     <tr><td><k>(B) 회신 수단·기한, 취소 기준, 정산 창구</k><j>（B）回答手段・期限、キャンセル基準、精算窓口</j></td><td><k>FLYING 안 제시 → 야마야 승인</k><j>FLYING案 → 貴社ご承認</j></td><td><k>기준안 · 기존 체험 예약·단체 창구와의 연결안</k><j>基準案・既存の体験予約／団体窓口との連携案</j></td><td>②</td></tr>
     <tr><td><k>사진 사용 범위</k><j>写真のご利用範囲</j></td><td><k>야마야 결정</k><j>貴社ご判断</j></td><td><k>사용처 목록 (이 제안서에는 미사용)</k><j>使用先の一覧（本資料では未使用）</j></td><td>②</td></tr>
     <tr><td><k>현장 이용·매출 데이터 집계 방법</k><j>来店・売上データの集計方法</j></td><td><k>FLYING 안 제시 → 야마야 승인</k><j>FLYING案 → 貴社ご承認</j></td><td><k>집계 양식</k><j>集計フォーマット</j></td><td>③</td></tr>
-    <tr><td><k>한국 매장 연계</k><j>韓国店舗との連携</j></td><td><k>야마야 확인 → 한국 운영사 협의</k><j>貴社ご確認 → 韓国運営会社と協議</j></td><td><k>대상 매장 목록 안내 방식 · 재방문 혜택 조건 안</k><j>対象店舗の案内方法・再来店特典の条件案</j></td><td>①</td></tr>
+    <tr><td><k>청구 방식 · 외부 비용</k><j>ご請求方法・外部費用</j></td><td><k>정식 견적서에서 확정</k><j>正式なお見積書で確定</j></td><td><k>월 청구 / 일괄 청구 안 · 외부 도구·결제 수수료 부담 안</k><j>月額請求・一括請求の案、外部ツール・決済手数料のご負担案</j></td><td>①</td></tr>
+      <tr><td><k>한국 매장 연계</k><j>韓国店舗との連携</j></td><td><k>야마야 확인 → 한국 운영사 협의</k><j>貴社ご確認 → 韓国運営会社と協議</j></td><td><k>대상 매장 목록 안내 방식 · 재방문 혜택 조건 안</k><j>対象店舗の案内方法・再来店特典の条件案</j></td><td>①</td></tr>
       <tr><td><k>후쿠오카 대면 거점(센터 등)</k><j>福岡での対面拠点（センター等）</j></td><td><k>이번 범위 밖</k><j>本提案の範囲外</j></td><td><k>필요 시 별도 제안</k><j>必要に応じて別途ご提案</j></td><td><k>별도</k><j>別途</j></td></tr>
   </table>
   <p class="src"><k>시점: ① 범위 결정 ② 제작 전 ③ 공개 전 (18쪽 단계)</k><j>時期：① 範囲の決定 ② 制作前 ③ 公開前（18ページの段階）</j></p>
